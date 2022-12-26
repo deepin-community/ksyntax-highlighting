@@ -19,7 +19,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3;\n"
-"X-Generator: KAider 0.1\n"
 "X-Qt-Contexts: true\n"
 
 msgctxt "Language|"
@@ -243,12 +242,6 @@ msgstr ""
 msgctxt "Language|"
 msgid "Django HTML Template"
 msgstr ""
-
-#, fuzzy
-#| msgid "New Filetype"
-msgctxt "Language|"
-msgid "Dockerfile"
-msgstr "Nowy datajowy typ"
 
 msgctxt "Language|"
 msgid "MS-DOS Batch"
@@ -804,6 +797,12 @@ msgctxt "Language|"
 msgid "OpenSCAD"
 msgstr ""
 
+#, fuzzy
+#| msgid "&Mode"
+msgctxt "Language|"
+msgid "Org Mode"
+msgstr "&Modus"
+
 msgctxt "Language|"
 msgid "Overpass QL"
 msgstr ""
@@ -909,6 +908,10 @@ msgid "q"
 msgstr ""
 
 msgctxt "Language|"
+msgid "Racket"
+msgstr ""
+
+msgctxt "Language|"
 msgid "Raku"
 msgstr ""
 
@@ -937,6 +940,10 @@ msgstr ""
 msgctxt "Language|"
 msgid "reStructuredText"
 msgstr "Jenož &wubrany tekst ćišćeć"
+
+msgctxt "Language|"
+msgid "RETRO"
+msgstr ""
 
 msgctxt "Language|"
 msgid "REXX"
@@ -1110,6 +1117,10 @@ msgstr ""
 
 msgctxt "Language|"
 msgid "Tcsh"
+msgstr ""
+
+msgctxt "Language|"
+msgid "Terraform"
 msgstr ""
 
 msgctxt "Language|"
@@ -1361,6 +1372,10 @@ msgid "gruvbox Dark"
 msgstr ""
 
 msgctxt "Theme|"
+msgid "Homunculus"
+msgstr ""
+
+msgctxt "Theme|"
 msgid "Monokai"
 msgstr ""
 
@@ -1504,7 +1519,7 @@ msgctxt "SyntaxHighlightingCLI|"
 msgid "Read file from stdin. The -s option must also be used."
 msgstr ""
 
-#: lib/definition_p.h:88
+#: lib/definition_p.h:98
 msgctxt "Language|"
 msgid "None"
 msgstr ""

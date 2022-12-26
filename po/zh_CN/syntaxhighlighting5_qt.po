@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
-"PO-Revision-Date: 2021-08-30 11:44\n"
+"PO-Revision-Date: 2021-12-22 14:06\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -250,10 +250,6 @@ msgstr "Diff"
 msgctxt "Language|"
 msgid "Django HTML Template"
 msgstr "Django HTML 模板"
-
-msgctxt "Language|"
-msgid "Dockerfile"
-msgstr "Dockerfile"
 
 msgctxt "Language|"
 msgid "MS-DOS Batch"
@@ -796,6 +792,10 @@ msgid "OpenSCAD"
 msgstr "OpenSCAD"
 
 msgctxt "Language|"
+msgid "Org Mode"
+msgstr "Org Mode"
+
+msgctxt "Language|"
 msgid "Overpass QL"
 msgstr "Overpass QL"
 
@@ -896,6 +896,10 @@ msgid "q"
 msgstr "q"
 
 msgctxt "Language|"
+msgid "Racket"
+msgstr "Racket"
+
+msgctxt "Language|"
 msgid "Raku"
 msgstr "Raku"
 
@@ -922,6 +926,10 @@ msgstr "Replicode"
 msgctxt "Language|"
 msgid "reStructuredText"
 msgstr "reStructuredText"
+
+msgctxt "Language|"
+msgid "RETRO"
+msgstr "RETRO"
 
 msgctxt "Language|"
 msgid "REXX"
@@ -1096,6 +1104,10 @@ msgid "Tcsh"
 msgstr "Tcsh"
 
 msgctxt "Language|"
+msgid "Terraform"
+msgstr "Terraform"
+
+msgctxt "Language|"
 msgid "Texinfo"
 msgstr "Texinfo"
 
@@ -1257,7 +1269,7 @@ msgstr "源代码"
 
 msgctxt "Language Section|"
 msgid "Other"
-msgstr "其它"
+msgstr "其他"
 
 msgctxt "Language Section|"
 msgid "Hardware"
@@ -1289,19 +1301,19 @@ msgstr "3D"
 
 msgctxt "Theme|"
 msgid "Atom One Dark"
-msgstr "Atom One 暗色"
+msgstr "Atom One 深色"
 
 msgctxt "Theme|"
 msgid "Atom One Light"
-msgstr "Atom One 亮色"
+msgstr "Atom One 浅色"
 
 msgctxt "Theme|"
 msgid "ayu Dark"
-msgstr "ayu 暗色"
+msgstr "ayu 深色"
 
 msgctxt "Theme|"
 msgid "ayu Light"
-msgstr "ayu 亮色"
+msgstr "ayu 浅色"
 
 msgctxt "Theme|"
 msgid "ayu Mirage"
@@ -1309,11 +1321,11 @@ msgstr "ayu 海市蜃楼"
 
 msgctxt "Theme|"
 msgid "Breeze Dark"
-msgstr "暗色微风"
+msgstr "Breeze 微风深色"
 
 msgctxt "Theme|"
 msgid "Breeze Light"
-msgstr "Breeze 微风亮色"
+msgstr "Breeze 微风浅色"
 
 msgctxt "Theme|"
 msgid "Dracula"
@@ -1325,15 +1337,19 @@ msgstr "Falcon 猎鹰"
 
 msgctxt "Theme|"
 msgid "GitHub Dark"
-msgstr "GitHub 暗色"
+msgstr "GitHub 深色"
 
 msgctxt "Theme|"
 msgid "GitHub Light"
-msgstr "GitHub 亮色"
+msgstr "GitHub 浅色"
 
 msgctxt "Theme|"
 msgid "gruvbox Dark"
-msgstr "gruvbox 暗色"
+msgstr "gruvbox 深色"
+
+msgctxt "Theme|"
+msgid "Homunculus"
+msgstr "Homunculus"
 
 msgctxt "Theme|"
 msgid "Monokai"
@@ -1357,15 +1373,15 @@ msgstr "Radical 激进"
 
 msgctxt "Theme|"
 msgid "Solarized Dark"
-msgstr "Solarized 过曝暗色"
+msgstr "Solarized 过曝深色"
 
 msgctxt "Theme|"
 msgid "Solarized Light"
-msgstr "Solarized 过曝亮色"
+msgstr "Solarized 过曝浅色"
 
 msgctxt "Theme|"
 msgid "Vim Dark"
-msgstr "Vim 暗色"
+msgstr "Vim 深色"
 
 #: cli/kate-syntax-highlighter.cpp:61
 msgctxt "SyntaxHighlightingCLI|"
@@ -1479,7 +1495,7 @@ msgctxt "SyntaxHighlightingCLI|"
 msgid "Read file from stdin. The -s option must also be used."
 msgstr "从 stdin 读取文件。还必须使用 -s 选项。"
 
-#: lib/definition_p.h:88
+#: lib/definition_p.h:98
 msgctxt "Language|"
 msgid "None"
 msgstr "无"

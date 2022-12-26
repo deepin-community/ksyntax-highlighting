@@ -2,14 +2,18 @@
 libKF5SyntaxHighlighting.so.5 libkf5syntaxhighlighting5 #MINVER#
 * Build-Depends-Package: libkf5syntaxhighlighting-dev
  _ZN19KSyntaxHighlighting10Definition14setKeywordListERK7QStringRK11QStringList@Base 5.62.0
+ _ZN19KSyntaxHighlighting10Definition16staticMetaObjectE@Base 5.90.0
+ _ZN19KSyntaxHighlighting10DefinitionC1EOS0_@Base 5.90.0
  _ZN19KSyntaxHighlighting10DefinitionC1EOSt10shared_ptrINS_14DefinitionDataEE@Base 5.74.0
  _ZN19KSyntaxHighlighting10DefinitionC1ERKS0_@Base 5.28.0
  _ZN19KSyntaxHighlighting10DefinitionC1Ev@Base 5.28.0
+ _ZN19KSyntaxHighlighting10DefinitionC2EOS0_@Base 5.90.0
  _ZN19KSyntaxHighlighting10DefinitionC2EOSt10shared_ptrINS_14DefinitionDataEE@Base 5.74.0
  _ZN19KSyntaxHighlighting10DefinitionC2ERKS0_@Base 5.28.0
  _ZN19KSyntaxHighlighting10DefinitionC2Ev@Base 5.28.0
  _ZN19KSyntaxHighlighting10DefinitionD1Ev@Base 5.28.0
  _ZN19KSyntaxHighlighting10DefinitionD2Ev@Base 5.28.0
+ _ZN19KSyntaxHighlighting10DefinitionaSEOS0_@Base 5.90.0
  _ZN19KSyntaxHighlighting10DefinitionaSERKS0_@Base 5.28.0
  _ZN19KSyntaxHighlighting10Repository12defaultThemeENS0_12DefaultThemeE@Base 5.28.0
  _ZN19KSyntaxHighlighting10Repository15themeForPaletteERK8QPalette@Base 5.77.0
@@ -43,6 +47,7 @@ libKF5SyntaxHighlighting.so.5 libkf5syntaxhighlighting5 #MINVER#
  _ZN19KSyntaxHighlighting15HtmlHighlighterD0Ev@Base 5.28.0
  _ZN19KSyntaxHighlighting15HtmlHighlighterD1Ev@Base 5.28.0
  _ZN19KSyntaxHighlighting15HtmlHighlighterD2Ev@Base 5.28.0
+ _ZN19KSyntaxHighlighting15WildcardMatcher10exactMatchE11QStringViewS1_@Base 5.90.0
  _ZN19KSyntaxHighlighting17SyntaxHighlighter11applyFormatEiiRKNS_6FormatE@Base 5.28.0
  _ZN19KSyntaxHighlighting17SyntaxHighlighter11qt_metacallEN11QMetaObject4CallEiPPv@Base 5.28.0
  _ZN19KSyntaxHighlighting17SyntaxHighlighter11qt_metacastEPKc@Base 5.28.0
@@ -58,6 +63,7 @@ libKF5SyntaxHighlighting.so.5 libkf5syntaxhighlighting5 #MINVER#
  _ZN19KSyntaxHighlighting17SyntaxHighlighterD1Ev@Base 5.28.0
  _ZN19KSyntaxHighlighting17SyntaxHighlighterD2Ev@Base 5.28.0
  _ZN19KSyntaxHighlighting19AbstractHighlighter12applyFoldingEiiNS_13FoldingRegionE@Base 5.28.0
+ _ZN19KSyntaxHighlighting19AbstractHighlighter13highlightLineE11QStringViewRKNS_5StateE@Base 5.90.0
  _ZN19KSyntaxHighlighting19AbstractHighlighter13highlightLineERK7QStringRKNS_5StateE@Base 5.28.0
  _ZN19KSyntaxHighlighting19AbstractHighlighter13setDefinitionERKNS_10DefinitionE@Base 5.28.0
  _ZN19KSyntaxHighlighting19AbstractHighlighter8setThemeERKNS_5ThemeE@Base 5.28.0

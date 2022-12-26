@@ -1,3 +1,31 @@
+ksyntax-highlighting (5.90.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (5.89.0).
+
+  [ Aurélien COUDERC ]
+  * New upstream release (5.90.0).
+  * Added myself to the uploaders.
+  * Update symbols from build for 5.90.0.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Fri, 11 Feb 2022 23:46:42 +0100
+
+ksyntax-highlighting (5.88.0-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Norbert Preining <norbert@preining.info>  Wed, 17 Nov 2021 06:07:43 +0900
+
+ksyntax-highlighting (5.88.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (5.87.0).
+  * New upstream release (5.88.0).
+  * Force-bump frameworks internal b-d to 5.88.
+  * Add qt5declarative-dev and build/add QML module package.
+
+ -- Norbert Preining <norbert@preining.info>  Tue, 16 Nov 2021 09:17:12 +0900
+
 ksyntax-highlighting (5.86.0-1) unstable; urgency=medium
 
   [ Norbert Preining ]

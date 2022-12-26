@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: syntaxhighlighting5_qt\n"
-"PO-Revision-Date: 2021-06-20 08:22+0300\n"
+"PO-Revision-Date: 2021-12-14 09:02+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -239,10 +239,6 @@ msgstr "Diff"
 msgctxt "Language|"
 msgid "Django HTML Template"
 msgstr "Django HTML-шаблон"
-
-msgctxt "Language|"
-msgid "Dockerfile"
-msgstr "Dockerfile"
 
 msgctxt "Language|"
 msgid "MS-DOS Batch"
@@ -785,6 +781,10 @@ msgid "OpenSCAD"
 msgstr "OpenSCAD"
 
 msgctxt "Language|"
+msgid "Org Mode"
+msgstr "Org Mode"
+
+msgctxt "Language|"
 msgid "Overpass QL"
 msgstr "Overpass QL"
 
@@ -885,6 +885,10 @@ msgid "q"
 msgstr "q"
 
 msgctxt "Language|"
+msgid "Racket"
+msgstr "Racket"
+
+msgctxt "Language|"
 msgid "Raku"
 msgstr "Raku"
 
@@ -911,6 +915,10 @@ msgstr "Replicode"
 msgctxt "Language|"
 msgid "reStructuredText"
 msgstr "reStructuredText"
+
+msgctxt "Language|"
+msgid "RETRO"
+msgstr "RETRO"
 
 msgctxt "Language|"
 msgid "REXX"
@@ -1083,6 +1091,10 @@ msgstr "Tcl/Tk"
 msgctxt "Language|"
 msgid "Tcsh"
 msgstr "Tcsh"
+
+msgctxt "Language|"
+msgid "Terraform"
+msgstr "Terraform"
 
 msgctxt "Language|"
 msgid "Texinfo"
@@ -1325,6 +1337,10 @@ msgid "gruvbox Dark"
 msgstr "Темна gruvbox"
 
 msgctxt "Theme|"
+msgid "Homunculus"
+msgstr "Homunculus"
+
+msgctxt "Theme|"
 msgid "Monokai"
 msgstr "Monokai"
 
@@ -1480,7 +1496,7 @@ msgctxt "SyntaxHighlightingCLI|"
 msgid "Read file from stdin. The -s option must also be used."
 msgstr "Читати файл зі stdin. Слід також скористатися параметром -s."
 
-#: lib/definition_p.h:88
+#: lib/definition_p.h:98
 msgctxt "Language|"
 msgid "None"
 msgstr "Немає"

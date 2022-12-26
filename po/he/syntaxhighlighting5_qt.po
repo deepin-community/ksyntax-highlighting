@@ -298,11 +298,6 @@ msgstr "תבנית HTML של Django"
 
 #, fuzzy
 msgctxt "Language|"
-msgid "Dockerfile"
-msgstr "Makefile"
-
-#, fuzzy
-msgctxt "Language|"
 msgid "MS-DOS Batch"
 msgstr "תסריט Batch של MS-DOS"
 
@@ -942,6 +937,10 @@ msgid "OpenSCAD"
 msgstr "OpenCL"
 
 msgctxt "Language|"
+msgid "Org Mode"
+msgstr ""
+
+msgctxt "Language|"
 msgid "Overpass QL"
 msgstr ""
 
@@ -1062,6 +1061,10 @@ msgid "q"
 msgstr "q"
 
 msgctxt "Language|"
+msgid "Racket"
+msgstr ""
+
+msgctxt "Language|"
 msgid "Raku"
 msgstr ""
 
@@ -1092,6 +1095,10 @@ msgstr "ה&חלף"
 msgctxt "Language|"
 msgid "reStructuredText"
 msgstr "reStructuredText"
+
+msgctxt "Language|"
+msgid "RETRO"
+msgstr ""
 
 #, fuzzy
 msgctxt "Language|"
@@ -1294,6 +1301,10 @@ msgstr "Tcl/Tk"
 msgctxt "Language|"
 msgid "Tcsh"
 msgstr "Tcsh"
+
+msgctxt "Language|"
+msgid "Terraform"
+msgstr ""
 
 #, fuzzy
 msgctxt "Language|"
@@ -1575,6 +1586,10 @@ msgctxt "Theme|"
 msgid "gruvbox Dark"
 msgstr ""
 
+msgctxt "Theme|"
+msgid "Homunculus"
+msgstr ""
+
 #, fuzzy
 msgctxt "Theme|"
 msgid "Monokai"
@@ -1722,7 +1737,7 @@ msgctxt "SyntaxHighlightingCLI|"
 msgid "Read file from stdin. The -s option must also be used."
 msgstr ""
 
-#: lib/definition_p.h:88
+#: lib/definition_p.h:98
 msgctxt "Language|"
 msgid "None"
 msgstr ""

@@ -241,10 +241,6 @@ msgid "Django HTML Template"
 msgstr ""
 
 msgctxt "Language|"
-msgid "Dockerfile"
-msgstr ""
-
-msgctxt "Language|"
 msgid "MS-DOS Batch"
 msgstr ""
 
@@ -785,6 +781,10 @@ msgid "OpenSCAD"
 msgstr ""
 
 msgctxt "Language|"
+msgid "Org Mode"
+msgstr ""
+
+msgctxt "Language|"
 msgid "Overpass QL"
 msgstr ""
 
@@ -885,6 +885,10 @@ msgid "q"
 msgstr ""
 
 msgctxt "Language|"
+msgid "Racket"
+msgstr ""
+
+msgctxt "Language|"
 msgid "Raku"
 msgstr ""
 
@@ -910,6 +914,10 @@ msgstr ""
 
 msgctxt "Language|"
 msgid "reStructuredText"
+msgstr ""
+
+msgctxt "Language|"
+msgid "RETRO"
 msgstr ""
 
 msgctxt "Language|"
@@ -1082,6 +1090,10 @@ msgstr ""
 
 msgctxt "Language|"
 msgid "Tcsh"
+msgstr ""
+
+msgctxt "Language|"
+msgid "Terraform"
 msgstr ""
 
 msgctxt "Language|"
@@ -1325,6 +1337,10 @@ msgid "gruvbox Dark"
 msgstr ""
 
 msgctxt "Theme|"
+msgid "Homunculus"
+msgstr ""
+
+msgctxt "Theme|"
 msgid "Monokai"
 msgstr ""
 
@@ -1464,7 +1480,7 @@ msgctxt "SyntaxHighlightingCLI|"
 msgid "Read file from stdin. The -s option must also be used."
 msgstr ""
 
-#: lib/definition_p.h:88
+#: lib/definition_p.h:98
 msgctxt "Language|"
 msgid "None"
 msgstr ""

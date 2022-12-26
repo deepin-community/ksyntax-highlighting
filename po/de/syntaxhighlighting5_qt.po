@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: katepart4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2016-09-08 07:30+0000\n"
-"PO-Revision-Date: 2021-06-20 15:29+0200\n"
+"PO-Revision-Date: 2021-10-15 12:32+0200\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -21,6 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 19.12.3\n"
 "X-Qt-Contexts: true\n"
 
 msgctxt "Language|"
@@ -242,10 +243,6 @@ msgstr "Diff"
 msgctxt "Language|"
 msgid "Django HTML Template"
 msgstr "Django-HTML-Vorlage"
-
-msgctxt "Language|"
-msgid "Dockerfile"
-msgstr "Dockerfile"
 
 msgctxt "Language|"
 msgid "MS-DOS Batch"
@@ -787,6 +784,12 @@ msgctxt "Language|"
 msgid "OpenSCAD"
 msgstr "OpenSCAD"
 
+#, fuzzy
+#| msgid "Normal Mode"
+msgctxt "Language|"
+msgid "Org Mode"
+msgstr "Normaler Modus"
+
 msgctxt "Language|"
 msgid "Overpass QL"
 msgstr "Overpass QL"
@@ -888,6 +891,10 @@ msgid "q"
 msgstr "q"
 
 msgctxt "Language|"
+msgid "Racket"
+msgstr ""
+
+msgctxt "Language|"
 msgid "Raku"
 msgstr "Raku"
 
@@ -914,6 +921,10 @@ msgstr "Replicode"
 msgctxt "Language|"
 msgid "reStructuredText"
 msgstr "reStructuredText"
+
+msgctxt "Language|"
+msgid "RETRO"
+msgstr ""
 
 msgctxt "Language|"
 msgid "REXX"
@@ -1086,6 +1097,10 @@ msgstr "Tcl/Tk"
 msgctxt "Language|"
 msgid "Tcsh"
 msgstr "Tcsh"
+
+msgctxt "Language|"
+msgid "Terraform"
+msgstr "Terraform"
 
 msgctxt "Language|"
 msgid "Texinfo"
@@ -1330,6 +1345,10 @@ msgid "gruvbox Dark"
 msgstr "gruvbox Dunkel"
 
 msgctxt "Theme|"
+msgid "Homunculus"
+msgstr ""
+
+msgctxt "Theme|"
 msgid "Monokai"
 msgstr "Monokai"
 
@@ -1481,7 +1500,7 @@ msgstr ""
 "Datei von der Standardeingabe stdin lesen. Die Option -s muss ebenfalls "
 "verwendet werden."
 
-#: lib/definition_p.h:88
+#: lib/definition_p.h:98
 msgctxt "Language|"
 msgid "None"
 msgstr "Keine"

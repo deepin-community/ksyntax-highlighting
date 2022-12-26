@@ -31,7 +31,7 @@ class FormatCollector : public AbstractHighlighter
 {
 public:
     using AbstractHighlighter::highlightLine;
-    void applyFormat(int offset, int length, const Format &format) Q_DECL_OVERRIDE
+    void applyFormat(int offset, int length, const Format &format) override
     {
         Q_UNUSED(offset);
         Q_UNUSED(length);
@@ -83,7 +83,7 @@ private Q_SLOTS:
         const auto t = m_repo.theme(themeName);
         QVERIFY(t.isValid());
         collector.setTheme(t);
-        collector.highlightLine(QLatin1String("normal + property real foo: 3.14"), State());
+        collector.highlightLine(u"normal + property real foo: 3.14", State());
 
         QVERIFY(collector.formatMap.size() >= 4);
         // qDebug() << collector.formatMap.keys();
@@ -170,7 +170,7 @@ private Q_SLOTS:
         // somewhat complicated way to get proper Format objects
         FormatCollector collector;
         collector.setDefinition(m_repo.definitionForName(QLatin1String("QML")));
-        collector.highlightLine(QLatin1String("normal + property real foo: 3.14"), State());
+        collector.highlightLine(u"normal + property real foo: 3.14", State());
 
         QVERIFY(collector.formatMap.size() >= 4);
         auto f = collector.formatMap.value(QLatin1String("Normal Text"));

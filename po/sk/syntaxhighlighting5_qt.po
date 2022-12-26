@@ -239,10 +239,6 @@ msgid "Django HTML Template"
 msgstr "Django HTML Template"
 
 msgctxt "Language|"
-msgid "Dockerfile"
-msgstr "Dockerfile"
-
-msgctxt "Language|"
 msgid "MS-DOS Batch"
 msgstr "MS-DOS dávka"
 
@@ -783,6 +779,10 @@ msgid "OpenSCAD"
 msgstr "OpenSCAD"
 
 msgctxt "Language|"
+msgid "Org Mode"
+msgstr ""
+
+msgctxt "Language|"
 msgid "Overpass QL"
 msgstr "Overpass QL"
 
@@ -883,6 +883,10 @@ msgid "q"
 msgstr "q"
 
 msgctxt "Language|"
+msgid "Racket"
+msgstr ""
+
+msgctxt "Language|"
 msgid "Raku"
 msgstr "Raku"
 
@@ -909,6 +913,10 @@ msgstr "Replikovať"
 msgctxt "Language|"
 msgid "reStructuredText"
 msgstr "reStructuredText"
+
+msgctxt "Language|"
+msgid "RETRO"
+msgstr ""
 
 msgctxt "Language|"
 msgid "REXX"
@@ -1081,6 +1089,10 @@ msgstr "Tcl/Tk"
 msgctxt "Language|"
 msgid "Tcsh"
 msgstr "Tcsh"
+
+msgctxt "Language|"
+msgid "Terraform"
+msgstr ""
 
 msgctxt "Language|"
 msgid "Texinfo"
@@ -1323,6 +1335,10 @@ msgid "gruvbox Dark"
 msgstr "gruvbox Tmavý"
 
 msgctxt "Theme|"
+msgid "Homunculus"
+msgstr ""
+
+msgctxt "Theme|"
 msgid "Monokai"
 msgstr "Monokai"
 
@@ -1473,7 +1489,7 @@ msgctxt "SyntaxHighlightingCLI|"
 msgid "Read file from stdin. The -s option must also be used."
 msgstr "Čítať súbor z stdin. Možnosť -s musí byť tiež použitá."
 
-#: lib/definition_p.h:88
+#: lib/definition_p.h:98
 msgctxt "Language|"
 msgid "None"
 msgstr "Žiadny"

@@ -318,13 +318,6 @@ msgstr "قالب دجانغو HTML"
 
 #, fuzzy
 #| msgctxt "Language"
-#| msgid "Makefile"
-msgctxt "Language|"
-msgid "Dockerfile"
-msgstr "ملفّ Make"
-
-#, fuzzy
-#| msgctxt "Language"
 #| msgid "MS-DOS Batch"
 msgctxt "Language|"
 msgid "MS-DOS Batch"
@@ -970,6 +963,12 @@ msgctxt "Language|"
 msgid "OpenSCAD"
 msgstr "أوپن‌سي‌إل"
 
+#, fuzzy
+#| msgid "Normal Mode"
+msgctxt "Language|"
+msgid "Org Mode"
+msgstr "الوضع العاديّ"
+
 msgctxt "Language|"
 msgid "Overpass QL"
 msgstr ""
@@ -1099,6 +1098,10 @@ msgid "q"
 msgstr ""
 
 msgctxt "Language|"
+msgid "Racket"
+msgstr ""
+
+msgctxt "Language|"
 msgid "Raku"
 msgstr ""
 
@@ -1132,6 +1135,10 @@ msgstr "ريپلكود"
 msgctxt "Language|"
 msgid "reStructuredText"
 msgstr "النص المحدد:"
+
+msgctxt "Language|"
+msgid "RETRO"
+msgstr ""
 
 msgctxt "Language|"
 msgid "REXX"
@@ -1325,6 +1332,10 @@ msgstr ""
 
 msgctxt "Language|"
 msgid "Tcsh"
+msgstr ""
+
+msgctxt "Language|"
+msgid "Terraform"
 msgstr ""
 
 msgctxt "Language|"
@@ -1629,6 +1640,10 @@ msgid "gruvbox Dark"
 msgstr ""
 
 msgctxt "Theme|"
+msgid "Homunculus"
+msgstr ""
+
+msgctxt "Theme|"
 msgid "Monokai"
 msgstr ""
 
@@ -1785,7 +1800,7 @@ msgctxt "SyntaxHighlightingCLI|"
 msgid "Read file from stdin. The -s option must also be used."
 msgstr ""
 
-#: lib/definition_p.h:88
+#: lib/definition_p.h:98
 #, fuzzy
 #| msgctxt "Syntax highlighting"
 #| msgid "None"

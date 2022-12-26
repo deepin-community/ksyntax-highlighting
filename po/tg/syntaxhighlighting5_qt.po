@@ -244,10 +244,6 @@ msgid "Django HTML Template"
 msgstr "Қолибҳои Django HTML"
 
 msgctxt "Language|"
-msgid "Dockerfile"
-msgstr "Dockerfile"
-
-msgctxt "Language|"
 msgid "MS-DOS Batch"
 msgstr "MS-DOS Batch"
 
@@ -794,6 +790,12 @@ msgctxt "Language|"
 msgid "OpenSCAD"
 msgstr "OpenSCAD"
 
+#, fuzzy
+#| msgid "Normal Text"
+msgctxt "Language|"
+msgid "Org Mode"
+msgstr "Матни муқаррарӣ"
+
 msgctxt "Language|"
 msgid "Overpass QL"
 msgstr ""
@@ -901,6 +903,10 @@ msgid "q"
 msgstr "q"
 
 msgctxt "Language|"
+msgid "Racket"
+msgstr ""
+
+msgctxt "Language|"
 msgid "Raku"
 msgstr ""
 
@@ -927,6 +933,10 @@ msgstr "Replicode"
 msgctxt "Language|"
 msgid "reStructuredText"
 msgstr "reStructuredText"
+
+msgctxt "Language|"
+msgid "RETRO"
+msgstr ""
 
 msgctxt "Language|"
 msgid "REXX"
@@ -1099,6 +1109,10 @@ msgstr "Tcl/Tk"
 msgctxt "Language|"
 msgid "Tcsh"
 msgstr "Tcsh"
+
+msgctxt "Language|"
+msgid "Terraform"
+msgstr ""
 
 msgctxt "Language|"
 msgid "Texinfo"
@@ -1349,6 +1363,10 @@ msgctxt "Theme|"
 msgid "gruvbox Dark"
 msgstr ""
 
+msgctxt "Theme|"
+msgid "Homunculus"
+msgstr ""
+
 #, fuzzy
 #| msgctxt "Language|"
 #| msgid "MonoBasic"
@@ -1498,7 +1516,7 @@ msgctxt "SyntaxHighlightingCLI|"
 msgid "Read file from stdin. The -s option must also be used."
 msgstr "Хониши файл аз stdin. Имкони -s инчунин бояд истифода шавад."
 
-#: lib/definition_p.h:88
+#: lib/definition_p.h:98
 #, fuzzy
 #| msgctxt "Syntax highlighting|"
 #| msgid "None"

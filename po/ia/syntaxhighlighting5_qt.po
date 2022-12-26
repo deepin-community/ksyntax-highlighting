@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2016-09-08 07:30+0000\n"
-"PO-Revision-Date: 2021-08-30 12:44+0200\n"
+"PO-Revision-Date: 2021-12-14 22:28+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Italian <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 20.04.2\n"
+"X-Generator: Lokalize 21.12.0\n"
 "X-Qt-Contexts: true\n"
 
 msgctxt "Language|"
@@ -237,10 +237,6 @@ msgstr "Diff"
 msgctxt "Language|"
 msgid "Django HTML Template"
 msgstr "Patrono HTML de Django"
-
-msgctxt "Language|"
-msgid "Dockerfile"
-msgstr "Dockerfile"
 
 msgctxt "Language|"
 msgid "MS-DOS Batch"
@@ -783,6 +779,10 @@ msgid "OpenSCAD"
 msgstr "OpenSCAD"
 
 msgctxt "Language|"
+msgid "Org Mode"
+msgstr "Modo Org"
+
+msgctxt "Language|"
 msgid "Overpass QL"
 msgstr "Overpass QL"
 
@@ -883,6 +883,10 @@ msgid "q"
 msgstr "q"
 
 msgctxt "Language|"
+msgid "Racket"
+msgstr "Racket"
+
+msgctxt "Language|"
 msgid "Raku"
 msgstr "Raku"
 
@@ -909,6 +913,10 @@ msgstr "Replicode"
 msgctxt "Language|"
 msgid "reStructuredText"
 msgstr "reStructuredText"
+
+msgctxt "Language|"
+msgid "RETRO"
+msgstr "RETRO"
 
 msgctxt "Language|"
 msgid "REXX"
@@ -1081,6 +1089,10 @@ msgstr "Tcl/Tk"
 msgctxt "Language|"
 msgid "Tcsh"
 msgstr "Tcsh"
+
+msgctxt "Language|"
+msgid "Terraform"
+msgstr "Terraform"
 
 msgctxt "Language|"
 msgid "Texinfo"
@@ -1323,6 +1335,10 @@ msgid "gruvbox Dark"
 msgstr "gruvbox Dark (gruvbox Obscure)"
 
 msgctxt "Theme|"
+msgid "Homunculus"
+msgstr "Homunculus"
+
+msgctxt "Theme|"
 msgid "Monokai"
 msgstr "Monokai"
 
@@ -1474,7 +1490,7 @@ msgctxt "SyntaxHighlightingCLI|"
 msgid "Read file from stdin. The -s option must also be used."
 msgstr "Lege file ab stdin. Le option anque debe esser usate. "
 
-#: lib/definition_p.h:88
+#: lib/definition_p.h:98
 msgctxt "Language|"
 msgid "None"
 msgstr "Necun"

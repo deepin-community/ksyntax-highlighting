@@ -2,19 +2,19 @@ Source: ksyntax-highlighting
 Section: libs
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-Uploaders: Norbert Preining <norbert@preining.info>
+Uploaders: Aurélien COUDERC <coucouf@debian.org>,
+           Norbert Preining <norbert@preining.info>,
 Build-Depends: cmake (>= 3.16~),
                debhelper-compat (= 13),
                doxygen,
-               extra-cmake-modules (>= 5.86.0~),
+               extra-cmake-modules (>= 5.90.0~),
                libqt5sql5-sqlite,
                libqt5xmlpatterns5-dev (>= 5.15.2~),
                perl,
                pkg-kde-tools (>= 0.15.15ubuntu1~),
                qtbase5-dev (>= 5.15.2~),
-               qtbase5-dev:native (>= 5.15.2~),
+               qtdeclarative5-dev (>= 5.15.2~),
                qttools5-dev (>= 5.4),
-               qttools5-dev:native,
 Standards-Version: 4.6.0
 Homepage: https://invent.kde.org/frameworks/syntax-highlighting
 Vcs-Browser: https://salsa.debian.org/qt-kde-team/kde/syntax-highlighting
@@ -40,6 +40,7 @@ Section: libdevel
 Architecture: any
 Depends: libkf5syntaxhighlighting5 (= ${binary:Version}),
          libqt5xmlpatterns5-dev (>= 5.15.2~),
+         qml-module-org-kde-syntaxhighlighting (= ${binary:Version}),
          qtbase5-dev (>= 5.15.2~),
          ${misc:Depends},
 Recommends: libkf5syntaxhighlighting-doc (= ${source:Version})
@@ -96,3 +97,19 @@ Description: Syntax highlighting Engine
  rendering (e.g. as HTML), supporting both integration
  with a custom editor as well as a ready-to-use
  QSyntaxHighlighter sub-class.
+
+Package: qml-module-org-kde-syntaxhighlighting
+Architecture: any
+Multi-Arch: same
+Depends: libkf5syntaxhighlighting5 (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: Syntax highlighting Engine (QML module)
+ This is a stand-alone implementation of the Kate syntax
+ highlighting engine. It's meant as a building block for
+ text editors as well as for simple highlighted text
+ rendering (e.g. as HTML), supporting both integration
+ with a custom editor as well as a ready-to-use
+ QSyntaxHighlighter sub-class.
+ .
+ This package contains the QtQuick QML module.

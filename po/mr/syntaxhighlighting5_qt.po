@@ -286,13 +286,6 @@ msgctxt "Language|"
 msgid "Django HTML Template"
 msgstr ""
 
-#, fuzzy
-#| msgctxt "short translation, user created new file"
-#| msgid "New file"
-msgctxt "Language|"
-msgid "Dockerfile"
-msgstr "नवीन फाईल"
-
 msgctxt "Language|"
 msgid "MS-DOS Batch"
 msgstr ""
@@ -908,6 +901,12 @@ msgctxt "Language|"
 msgid "OpenSCAD"
 msgstr ""
 
+#, fuzzy
+#| msgid "Normal Mode"
+msgctxt "Language|"
+msgid "Org Mode"
+msgstr "सामान्य पद्धत"
+
 msgctxt "Language|"
 msgid "Overpass QL"
 msgstr ""
@@ -1030,6 +1029,10 @@ msgid "q"
 msgstr ""
 
 msgctxt "Language|"
+msgid "Racket"
+msgstr ""
+
+msgctxt "Language|"
 msgid "Raku"
 msgstr ""
 
@@ -1062,6 +1065,10 @@ msgstr "बदला (&R)"
 msgctxt "Language|"
 msgid "reStructuredText"
 msgstr "निवडलेले पाठ्य"
+
+msgctxt "Language|"
+msgid "RETRO"
+msgstr ""
 
 msgctxt "Language|"
 msgid "REXX"
@@ -1261,6 +1268,10 @@ msgstr ""
 
 msgctxt "Language|"
 msgid "Tcsh"
+msgstr ""
+
+msgctxt "Language|"
+msgid "Terraform"
 msgstr ""
 
 msgctxt "Language|"
@@ -1568,6 +1579,10 @@ msgid "gruvbox Dark"
 msgstr ""
 
 msgctxt "Theme|"
+msgid "Homunculus"
+msgstr ""
+
+msgctxt "Theme|"
 msgid "Monokai"
 msgstr ""
 
@@ -1721,7 +1736,7 @@ msgctxt "SyntaxHighlightingCLI|"
 msgid "Read file from stdin. The -s option must also be used."
 msgstr ""
 
-#: lib/definition_p.h:88
+#: lib/definition_p.h:98
 #, fuzzy
 #| msgctxt "Syntax highlighting"
 #| msgid "None"

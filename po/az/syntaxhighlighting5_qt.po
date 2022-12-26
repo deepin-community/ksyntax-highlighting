@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2021-06-20 19:11+0400\n"
+"PO-Revision-Date: 2021-12-21 18:09+0400\n"
 "Last-Translator: Kheyyam Gojayev <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
 "Language: az\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.04.2\n"
+"X-Generator: Lokalize 21.12.0\n"
 
 msgctxt "Language|"
 msgid "4DOS BatchToMemory"
@@ -232,10 +232,6 @@ msgstr "Diff"
 msgctxt "Language|"
 msgid "Django HTML Template"
 msgstr "Django HTML Nümunəsi"
-
-msgctxt "Language|"
-msgid "Dockerfile"
-msgstr "Dockerfile"
 
 msgctxt "Language|"
 msgid "MS-DOS Batch"
@@ -778,6 +774,10 @@ msgid "OpenSCAD"
 msgstr "OpenSCAD"
 
 msgctxt "Language|"
+msgid "Org Mode"
+msgstr "Org rejimi"
+
+msgctxt "Language|"
 msgid "Overpass QL"
 msgstr "Overpass QL"
 
@@ -877,6 +877,11 @@ msgctxt "Language|"
 msgid "q"
 msgstr "q"
 
+# Proqramlaşdırma dili
+msgctxt "Language|"
+msgid "Racket"
+msgstr "Racket"
+
 msgctxt "Language|"
 msgid "Raku"
 msgstr "Raku"
@@ -904,6 +909,10 @@ msgstr "Replicode"
 msgctxt "Language|"
 msgid "reStructuredText"
 msgstr "reStructuredText"
+
+msgctxt "Language|"
+msgid "RETRO"
+msgstr "RETRO"
 
 msgctxt "Language|"
 msgid "REXX"
@@ -1076,6 +1085,10 @@ msgstr "Tcl/Tk"
 msgctxt "Language|"
 msgid "Tcsh"
 msgstr "Tcsh"
+
+msgctxt "Language|"
+msgid "Terraform"
+msgstr "Terraform"
 
 msgctxt "Language|"
 msgid "Texinfo"
@@ -1318,6 +1331,10 @@ msgid "gruvbox Dark"
 msgstr "gruvbox Qaranlıq"
 
 msgctxt "Theme|"
+msgid "Homunculus"
+msgstr "Homunculus"
+
+msgctxt "Theme|"
 msgid "Monokai"
 msgstr "Monokai"
 
@@ -1469,7 +1486,7 @@ msgctxt "SyntaxHighlightingCLI|"
 msgid "Read file from stdin. The -s option must also be used."
 msgstr "Faylı stdin -dən oxu. Həmçinin -s seçimi istifadə oluna bilər."
 
-#: lib/definition_p.h:88
+#: lib/definition_p.h:98
 msgctxt "Language|"
 msgid "None"
 msgstr "Heç biri"

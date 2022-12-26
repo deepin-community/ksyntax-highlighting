@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: syntaxhighlighting\n"
-"PO-Revision-Date: 2021-06-21 19:40+0100\n"
+"PO-Revision-Date: 2021-11-22 11:32+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -46,7 +46,7 @@ msgstr ""
 "X-POFile-SpellExtra: Snort PureScript ATS Idris LLVM Pure spec Drácula ayu\n"
 "X-POFile-SpellExtra: gruvbox Nord format region ansi Colors context type\n"
 "X-POFile-SpellExtra: systemd stackSize One Monokai Atom GitHub Cucumber\n"
-"X-POFile-SpellExtra: Gherkin Fluent Dart Falcon\n"
+"X-POFile-SpellExtra: Gherkin Fluent Dart Falcon Terraform Racket Org\n"
 
 msgctxt "Language|"
 msgid "4DOS BatchToMemory"
@@ -267,10 +267,6 @@ msgstr "Diff"
 msgctxt "Language|"
 msgid "Django HTML Template"
 msgstr "Modelo HTML de Django"
-
-msgctxt "Language|"
-msgid "Dockerfile"
-msgstr "Dockerfile"
 
 msgctxt "Language|"
 msgid "MS-DOS Batch"
@@ -813,6 +809,10 @@ msgid "OpenSCAD"
 msgstr "OpenSCAD"
 
 msgctxt "Language|"
+msgid "Org Mode"
+msgstr "Modo Org"
+
+msgctxt "Language|"
 msgid "Overpass QL"
 msgstr "Overpass QL"
 
@@ -913,6 +913,10 @@ msgid "q"
 msgstr "q"
 
 msgctxt "Language|"
+msgid "Racket"
+msgstr "Racket"
+
+msgctxt "Language|"
 msgid "Raku"
 msgstr "Raku"
 
@@ -939,6 +943,10 @@ msgstr "Replicode"
 msgctxt "Language|"
 msgid "reStructuredText"
 msgstr "reStructuredText"
+
+msgctxt "Language|"
+msgid "RETRO"
+msgstr ""
 
 msgctxt "Language|"
 msgid "REXX"
@@ -1111,6 +1119,10 @@ msgstr "Tcl/Tk"
 msgctxt "Language|"
 msgid "Tcsh"
 msgstr "Tcsh"
+
+msgctxt "Language|"
+msgid "Terraform"
+msgstr "Terraform"
 
 msgctxt "Language|"
 msgid "Texinfo"
@@ -1353,6 +1365,10 @@ msgid "gruvbox Dark"
 msgstr "gruvbox Escuro"
 
 msgctxt "Theme|"
+msgid "Homunculus"
+msgstr ""
+
+msgctxt "Theme|"
 msgid "Monokai"
 msgstr "Monokai"
 
@@ -1504,7 +1520,7 @@ msgctxt "SyntaxHighlightingCLI|"
 msgid "Read file from stdin. The -s option must also be used."
 msgstr "Ler o ficheiro do 'stdin'. Também deverá usar a opção '-s'."
 
-#: lib/definition_p.h:88
+#: lib/definition_p.h:98
 msgctxt "Language|"
 msgid "None"
 msgstr "Nenhuma"

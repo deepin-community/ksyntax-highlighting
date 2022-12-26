@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: katepart4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2016-09-08 07:30+0000\n"
-"PO-Revision-Date: 2021-06-20 16:46+0200\n"
+"PO-Revision-Date: 2021-11-11 10:55+0100\n"
 "Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 21.04.2\n"
+"X-Generator: Lokalize 21.08.3\n"
 "X-Qt-Contexts: true\n"
 
 msgctxt "Language|"
@@ -155,7 +155,7 @@ msgstr "ChangeLog"
 
 msgctxt "Language|"
 msgid "Common Intermediate Language (CIL)"
-msgstr ""
+msgstr "Common Intermediate Language (CIL)"
 
 msgctxt "Language|"
 msgid "Cisco"
@@ -219,7 +219,7 @@ msgstr "C"
 
 msgctxt "Language|"
 msgid "Dart"
-msgstr ""
+msgstr "Dart"
 
 msgctxt "Language|"
 msgid "Debian Changelog"
@@ -240,10 +240,6 @@ msgstr "Rozdíl"
 msgctxt "Language|"
 msgid "Django HTML Template"
 msgstr "Django HTML šablona"
-
-msgctxt "Language|"
-msgid "Dockerfile"
-msgstr "Dockerfile"
 
 msgctxt "Language|"
 msgid "MS-DOS Batch"
@@ -451,7 +447,7 @@ msgstr "Soubor Afflix slovníku Hunspell"
 
 msgctxt "Language|"
 msgid "Hunspell Thesaurus File"
-msgstr ""
+msgstr "Soubor Hunspell Thesaurus"
 
 msgctxt "Language|"
 msgid "Hunspell Dictionary File"
@@ -699,11 +695,11 @@ msgstr "Modula-2 (pouze ISO)"
 
 msgctxt "Language|"
 msgid "Modula-2 (PIM only)"
-msgstr ""
+msgstr "Modula-2 (pouze PIM)"
 
 msgctxt "Language|"
 msgid "Modula-2 (R10 only)"
-msgstr ""
+msgstr "Modula-2 (pouze R10)"
 
 msgctxt "Language|"
 msgid "Modula-2"
@@ -784,6 +780,10 @@ msgstr "OpenCL"
 msgctxt "Language|"
 msgid "OpenSCAD"
 msgstr "OpenSCAD"
+
+msgctxt "Language|"
+msgid "Org Mode"
+msgstr ""
 
 msgctxt "Language|"
 msgid "Overpass QL"
@@ -886,6 +886,10 @@ msgid "q"
 msgstr "q"
 
 msgctxt "Language|"
+msgid "Racket"
+msgstr "Racket"
+
+msgctxt "Language|"
 msgid "Raku"
 msgstr "Raku"
 
@@ -912,6 +916,10 @@ msgstr "Replicode"
 msgctxt "Language|"
 msgid "reStructuredText"
 msgstr "reStructuredText"
+
+msgctxt "Language|"
+msgid "RETRO"
+msgstr ""
 
 msgctxt "Language|"
 msgid "REXX"
@@ -1087,6 +1095,10 @@ msgid "Tcsh"
 msgstr "Tcsh"
 
 msgctxt "Language|"
+msgid "Terraform"
+msgstr "Terraform"
+
+msgctxt "Language|"
 msgid "Texinfo"
 msgstr "Texinfo"
 
@@ -1168,7 +1180,7 @@ msgstr "VRML"
 
 msgctxt "Language|"
 msgid "Wavefront OBJ"
-msgstr ""
+msgstr "Wavefront OBJ"
 
 msgctxt "Language|"
 msgid "Wayland Trace"
@@ -1327,6 +1339,10 @@ msgid "gruvbox Dark"
 msgstr ""
 
 msgctxt "Theme|"
+msgid "Homunculus"
+msgstr ""
+
+msgctxt "Theme|"
 msgid "Monokai"
 msgstr "Monokai"
 
@@ -1467,7 +1483,7 @@ msgid "Read file from stdin. The -s option must also be used."
 msgstr ""
 
 # žádné parametry funkce v inspektoru funkcí
-#: lib/definition_p.h:88
+#: lib/definition_p.h:98
 msgctxt "Language|"
 msgid "None"
 msgstr "Nic"

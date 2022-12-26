@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: katepart4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2016-09-08 07:30+0000\n"
-"PO-Revision-Date: 2021-06-21 07:40+0200\n"
+"PO-Revision-Date: 2021-12-14 20:02+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@neuf.fr>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
 "Language: fr\n"
@@ -33,7 +33,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 21.04.2\n"
+"X-Generator: Lokalize 21.12.0\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: qtrich\n"
@@ -258,10 +258,6 @@ msgstr "Diff"
 msgctxt "Language|"
 msgid "Django HTML Template"
 msgstr "Modèle HTML « Django »"
-
-msgctxt "Language|"
-msgid "Dockerfile"
-msgstr "Fichier Docker"
 
 msgctxt "Language|"
 msgid "MS-DOS Batch"
@@ -804,6 +800,10 @@ msgid "OpenSCAD"
 msgstr "OpenSCAD"
 
 msgctxt "Language|"
+msgid "Org Mode"
+msgstr "Mode « Org »"
+
+msgctxt "Language|"
 msgid "Overpass QL"
 msgstr "Overpass QL"
 
@@ -904,6 +904,10 @@ msgid "q"
 msgstr "q"
 
 msgctxt "Language|"
+msgid "Racket"
+msgstr "Raquette"
+
+msgctxt "Language|"
 msgid "Raku"
 msgstr "Raku"
 
@@ -930,6 +934,10 @@ msgstr "Replicode"
 msgctxt "Language|"
 msgid "reStructuredText"
 msgstr "reStructuredText"
+
+msgctxt "Language|"
+msgid "RETRO"
+msgstr "RETRO"
 
 msgctxt "Language|"
 msgid "REXX"
@@ -1102,6 +1110,10 @@ msgstr "Tcl / Tk"
 msgctxt "Language|"
 msgid "Tcsh"
 msgstr "Tcsh"
+
+msgctxt "Language|"
+msgid "Terraform"
+msgstr "Terraform"
 
 msgctxt "Language|"
 msgid "Texinfo"
@@ -1344,6 +1356,10 @@ msgid "gruvbox Dark"
 msgstr "Gruvbox sombre"
 
 msgctxt "Theme|"
+msgid "Homunculus"
+msgstr "Homunculus"
+
+msgctxt "Theme|"
 msgid "Monokai"
 msgstr "Monokai"
 
@@ -1501,7 +1517,7 @@ msgstr ""
 "Lire le fichier depuis l'entrée standard. L'option -s doit également être "
 "utilisée."
 
-#: lib/definition_p.h:88
+#: lib/definition_p.h:98
 msgctxt "Language|"
 msgid "None"
 msgstr "Aucun"

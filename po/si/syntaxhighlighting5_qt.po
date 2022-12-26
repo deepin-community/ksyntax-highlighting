@@ -364,13 +364,6 @@ msgctxt "Language|"
 msgid "Django HTML Template"
 msgstr "Django HTML අච්චුව"
 
-#, fuzzy
-#| msgctxt "Language"
-#| msgid "Makefile"
-msgctxt "Language|"
-msgid "Dockerfile"
-msgstr "Makefile"
-
 msgctxt "Language|"
 msgid "MS-DOS Batch"
 msgstr ""
@@ -1156,6 +1149,12 @@ msgctxt "Language|"
 msgid "OpenSCAD"
 msgstr ""
 
+#, fuzzy
+#| msgid "Normal mode"
+msgctxt "Language|"
+msgid "Org Mode"
+msgstr "සාමාන්‍යය ආකාරය"
+
 msgctxt "Language|"
 msgid "Overpass QL"
 msgstr ""
@@ -1307,6 +1306,10 @@ msgid "q"
 msgstr ""
 
 msgctxt "Language|"
+msgid "Racket"
+msgstr ""
+
+msgctxt "Language|"
 msgid "Raku"
 msgstr ""
 
@@ -1343,6 +1346,10 @@ msgstr "ප්‍රතිස්ථාපනය කරන්න (~R)"
 msgctxt "Language|"
 msgid "reStructuredText"
 msgstr "reStructuredText"
+
+msgctxt "Language|"
+msgid "RETRO"
+msgstr ""
 
 #, fuzzy
 #| msgctxt "Language"
@@ -1594,6 +1601,10 @@ msgstr "Tcl/Tk"
 
 msgctxt "Language|"
 msgid "Tcsh"
+msgstr ""
+
+msgctxt "Language|"
+msgid "Terraform"
 msgstr ""
 
 #, fuzzy
@@ -1946,6 +1957,10 @@ msgctxt "Theme|"
 msgid "gruvbox Dark"
 msgstr ""
 
+msgctxt "Theme|"
+msgid "Homunculus"
+msgstr ""
+
 #, fuzzy
 #| msgctxt "Language"
 #| msgid "MonoBasic"
@@ -2106,7 +2121,7 @@ msgctxt "SyntaxHighlightingCLI|"
 msgid "Read file from stdin. The -s option must also be used."
 msgstr ""
 
-#: lib/definition_p.h:88
+#: lib/definition_p.h:98
 #, fuzzy
 #| msgctxt "Syntax highlighting"
 #| msgid "None"

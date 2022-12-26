@@ -237,10 +237,6 @@ msgid "Django HTML Template"
 msgstr "Django HTML Template"
 
 msgctxt "Language|"
-msgid "Dockerfile"
-msgstr "Dockerfile"
-
-msgctxt "Language|"
 msgid "MS-DOS Batch"
 msgstr "MS-DOS Batch"
 
@@ -784,6 +780,10 @@ msgid "OpenSCAD"
 msgstr "OpenSCAD"
 
 msgctxt "Language|"
+msgid "Org Mode"
+msgstr ""
+
+msgctxt "Language|"
 msgid "Overpass QL"
 msgstr "Overpass QL"
 
@@ -890,6 +890,10 @@ msgid "q"
 msgstr "q"
 
 msgctxt "Language|"
+msgid "Racket"
+msgstr ""
+
+msgctxt "Language|"
 msgid "Raku"
 msgstr ""
 
@@ -916,6 +920,10 @@ msgstr "Replicode"
 msgctxt "Language|"
 msgid "reStructuredText"
 msgstr "reStructuredText"
+
+msgctxt "Language|"
+msgid "RETRO"
+msgstr ""
 
 msgctxt "Language|"
 msgid "REXX"
@@ -1088,6 +1096,10 @@ msgstr "Tcl/Tk"
 msgctxt "Language|"
 msgid "Tcsh"
 msgstr "Tcsh"
+
+msgctxt "Language|"
+msgid "Terraform"
+msgstr ""
 
 msgctxt "Language|"
 msgid "Texinfo"
@@ -1335,6 +1347,10 @@ msgctxt "Theme|"
 msgid "gruvbox Dark"
 msgstr ""
 
+msgctxt "Theme|"
+msgid "Homunculus"
+msgstr ""
+
 #, fuzzy
 #| msgctxt "Language|"
 #| msgid "MonoBasic"
@@ -1485,7 +1501,7 @@ msgctxt "SyntaxHighlightingCLI|"
 msgid "Read file from stdin. The -s option must also be used."
 msgstr "Baca file dari stdin. Opsi -s mestinya juga digunakan."
 
-#: lib/definition_p.h:88
+#: lib/definition_p.h:98
 msgctxt "Language|"
 msgid "None"
 msgstr "None"

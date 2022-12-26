@@ -4,14 +4,14 @@
 #
 # Erik Kjær Pedersen <erik@binghamton.edu>, 2001, 2002, 2003, 2004, 2005, 2006.
 # Lars K. Schunk <lars@schunk.dk>, 2001, 2002.
-# Martin Schlander <mschlander@opensuse.org>, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020.
+# Martin Schlander <mschlander@opensuse.org>, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021.
 # Anders Lund <anders@alweb.dk>, 2008, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: katepart4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2016-09-08 07:30+0000\n"
-"PO-Revision-Date: 2020-10-27 19:25+0100\n"
+"PO-Revision-Date: 2021-09-09 21:43+0200\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
 "Language: da\n"
@@ -220,7 +220,7 @@ msgstr "C"
 
 msgctxt "Language|"
 msgid "Dart"
-msgstr ""
+msgstr "Dart"
 
 msgctxt "Language|"
 msgid "Debian Changelog"
@@ -241,10 +241,6 @@ msgstr "Diff"
 msgctxt "Language|"
 msgid "Django HTML Template"
 msgstr "Django HTML-skabelon"
-
-msgctxt "Language|"
-msgid "Dockerfile"
-msgstr "Docker-fil"
 
 msgctxt "Language|"
 msgid "MS-DOS Batch"
@@ -324,7 +320,7 @@ msgstr "FlatBuffers"
 
 msgctxt "Language|"
 msgid "Fluent"
-msgstr ""
+msgstr "Fluent"
 
 msgctxt "Language|"
 msgid "Fortran (Fixed Format)"
@@ -380,7 +376,7 @@ msgstr "GNU Gettekst"
 
 msgctxt "Language|"
 msgid "Cucumber Gherkin feature"
-msgstr ""
+msgstr "Cucumber Gherkin-funktion"
 
 msgctxt "Language|"
 msgid "Git Ignore"
@@ -786,6 +782,12 @@ msgctxt "Language|"
 msgid "OpenSCAD"
 msgstr "OpenSCAD"
 
+#, fuzzy
+#| msgid "Normal Mode"
+msgctxt "Language|"
+msgid "Org Mode"
+msgstr "Normal tilstand"
+
 msgctxt "Language|"
 msgid "Overpass QL"
 msgstr "Overpass QL"
@@ -887,6 +889,10 @@ msgid "q"
 msgstr "q"
 
 msgctxt "Language|"
+msgid "Racket"
+msgstr ""
+
+msgctxt "Language|"
 msgid "Raku"
 msgstr "Raku"
 
@@ -913,6 +919,10 @@ msgstr "Replicode"
 msgctxt "Language|"
 msgid "reStructuredText"
 msgstr "reStructuredText"
+
+msgctxt "Language|"
+msgid "RETRO"
+msgstr ""
 
 msgctxt "Language|"
 msgid "REXX"
@@ -1064,7 +1074,7 @@ msgstr "SystemC"
 
 msgctxt "Language|"
 msgid "systemd unit"
-msgstr ""
+msgstr "systemd-enhed"
 
 msgctxt "Language|"
 msgid "SystemVerilog"
@@ -1085,6 +1095,10 @@ msgstr "Tcl/Tk"
 msgctxt "Language|"
 msgid "Tcsh"
 msgstr "Tcsh"
+
+msgctxt "Language|"
+msgid "Terraform"
+msgstr "Terraform"
 
 msgctxt "Language|"
 msgid "Texinfo"
@@ -1280,11 +1294,11 @@ msgstr "3D"
 
 msgctxt "Theme|"
 msgid "Atom One Dark"
-msgstr ""
+msgstr "Atom One Dark"
 
 msgctxt "Theme|"
 msgid "Atom One Light"
-msgstr ""
+msgstr "Atom One Light"
 
 msgctxt "Theme|"
 msgid "ayu Dark"
@@ -1312,32 +1326,27 @@ msgstr "Dracula"
 
 msgctxt "Theme|"
 msgid "Falcon"
-msgstr ""
+msgstr "Falcon"
 
-#, fuzzy
-#| msgctxt "Theme|"
-#| msgid "ayu Dark"
 msgctxt "Theme|"
 msgid "GitHub Dark"
-msgstr "ayu Dark"
+msgstr "GitHub Dark"
 
-#, fuzzy
-#| msgctxt "Theme|"
-#| msgid "ayu Light"
 msgctxt "Theme|"
 msgid "GitHub Light"
-msgstr "ayu Light"
+msgstr "GitHub Light"
 
 msgctxt "Theme|"
 msgid "gruvbox Dark"
 msgstr "gruvbox Dark"
 
-#, fuzzy
-#| msgctxt "Language|"
-#| msgid "MonoBasic"
+msgctxt "Theme|"
+msgid "Homunculus"
+msgstr ""
+
 msgctxt "Theme|"
 msgid "Monokai"
-msgstr "MonoBasic"
+msgstr "Monokai"
 
 msgctxt "Theme|"
 msgid "Nord"
@@ -1345,7 +1354,7 @@ msgstr "Nord"
 
 msgctxt "Theme|"
 msgid "Oblivion"
-msgstr ""
+msgstr "Oblivion"
 
 msgctxt "Theme|"
 msgid "Printing"
@@ -1452,6 +1461,9 @@ msgid ""
 "Add information to debug a syntax file. Only works with --output-format=ansi "
 "or ansi256Colors. Possible values are format, region, context and stackSize."
 msgstr ""
+"Tilføj information for at fejlsøge en syntaksfiil. Virker kun med --output-"
+"format=ansi eller ansi256Colors. Mulige værdier er format, region, context "
+"og stackSize."
 
 #: cli/kate-syntax-highlighter.cpp:103
 msgctxt "SyntaxHighlightingCLI|"
@@ -1461,7 +1473,7 @@ msgstr "type"
 #: cli/kate-syntax-highlighter.cpp:107
 msgctxt "SyntaxHighlightingCLI|"
 msgid "Disable ANSI background for the default color."
-msgstr ""
+msgstr "Deaktivér ANSI-background for standardfarven."
 
 #: cli/kate-syntax-highlighter.cpp:112
 msgctxt "SyntaxHighlightingCLI|"
@@ -1483,7 +1495,7 @@ msgctxt "SyntaxHighlightingCLI|"
 msgid "Read file from stdin. The -s option must also be used."
 msgstr "Læs fil fra stdin. Tilvalget -s skal også bruges."
 
-#: lib/definition_p.h:88
+#: lib/definition_p.h:98
 msgctxt "Language|"
 msgid "None"
 msgstr "Ingen"

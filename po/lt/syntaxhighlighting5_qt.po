@@ -389,13 +389,6 @@ msgstr "Django HTML šablonas"
 
 #, fuzzy
 #| msgctxt "Language"
-#| msgid "Makefile"
-msgctxt "Language|"
-msgid "Dockerfile"
-msgstr "Makefile"
-
-#, fuzzy
-#| msgctxt "Language"
 #| msgid "MS-DOS Batch"
 msgctxt "Language|"
 msgid "MS-DOS Batch"
@@ -1239,6 +1232,12 @@ msgctxt "Language|"
 msgid "OpenSCAD"
 msgstr "OpenCL"
 
+#, fuzzy
+#| msgid "Normal Mode"
+msgctxt "Language|"
+msgid "Org Mode"
+msgstr "Normalus režimas"
+
 msgctxt "Language|"
 msgid "Overpass QL"
 msgstr ""
@@ -1400,6 +1399,10 @@ msgid "q"
 msgstr "q"
 
 msgctxt "Language|"
+msgid "Racket"
+msgstr ""
+
+msgctxt "Language|"
 msgid "Raku"
 msgstr ""
 
@@ -1440,6 +1443,10 @@ msgstr "&Pakeisti"
 msgctxt "Language|"
 msgid "reStructuredText"
 msgstr "reStructuredText"
+
+msgctxt "Language|"
+msgid "RETRO"
+msgstr ""
 
 #, fuzzy
 #| msgctxt "Language"
@@ -1701,6 +1708,10 @@ msgstr "Tcl/Tk"
 msgctxt "Language|"
 msgid "Tcsh"
 msgstr "Tcsh"
+
+msgctxt "Language|"
+msgid "Terraform"
+msgstr ""
 
 #, fuzzy
 #| msgctxt "Language"
@@ -2068,6 +2079,10 @@ msgctxt "Theme|"
 msgid "gruvbox Dark"
 msgstr ""
 
+msgctxt "Theme|"
+msgid "Homunculus"
+msgstr ""
+
 #, fuzzy
 #| msgctxt "Language"
 #| msgid "MonoBasic"
@@ -2228,7 +2243,7 @@ msgctxt "SyntaxHighlightingCLI|"
 msgid "Read file from stdin. The -s option must also be used."
 msgstr ""
 
-#: lib/definition_p.h:88
+#: lib/definition_p.h:98
 #, fuzzy
 #| msgctxt "Syntax highlighting"
 #| msgid "None"
