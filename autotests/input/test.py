@@ -32,6 +32,8 @@ def func(x):
         print("single \
                 continued line ")
         print('single line')
+    if y := x:
+        anext(a)
     return float(len(a2))
 
 
@@ -127,9 +129,12 @@ def func1():
 async def func2():
     await asyncio.sleep(1)
 
+assert cond, \
+    "bla bla"
+
 "\\\\\\\\\\ENSURE THAT THIS AND THE FOLLOWING LINES ARE AT THE END OF THE FILE\\\\\\\\\\ \
 "
-a = 'otherwise all succeeding lines will be
+a = 'otherwise the next line will be
 stuck on the Error attribute'
 br"Strings delimited by single quotes (' or ")
 can NOT be defined across multiple lines

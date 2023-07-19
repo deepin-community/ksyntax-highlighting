@@ -43,7 +43,7 @@
 <Normal Text>		</Normal Text><Reserved>class</Reserved><Normal Text> </Normal Text><Normal Text>DateTime </Normal Text><Normal Text>{</Normal Text><br/>
 <Normal Text>			</Normal Text><Parameter>info</Parameter><Symbol>:</Symbol><Normal Text> </Normal Text><Types>string</Types><Symbol>;</Symbol><br/>
 <Normal Text>			</Normal Text><Reserved>constructor</Reserved><Normal Text>() { </Normal Text><Keyword>this</Keyword><Symbol>.</Symbol><Object Member>info</Object Member><Normal Text> </Normal Text><Symbol>=</Symbol><Normal Text> </Normal Text><Keyword><?php</Keyword><PHP Text> </PHP Text><Keyword>echo</Keyword><Symbol>(</Symbol><Function>date</Function><Symbol>(</Symbol><String>"F d, Y h:i:s"</String><Other>,</Other><PHP Text> </PHP Text><Variable>$timestamp</Variable><Symbol>))</Symbol><Other>;</Other><PHP Text> </PHP Text><Keyword>?></Keyword><Symbol>;</Symbol><Normal Text> }</Normal Text><br/>
-<Normal Text>			</Normal Text><Reserved>get</Reserved><Normal Text>() { </Normal Text><ControlFlow>return</ControlFlow><Normal Text> </Normal Text><Keyword>this</Keyword><Symbol>.</Symbol><Object Member>info</Object Member><Symbol>;</Symbol><Normal Text> }</Normal Text><br/>
+<Normal Text>			</Normal Text><Keyword>get</Keyword><Normal Text>() { </Normal Text><ControlFlow>return</ControlFlow><Normal Text> </Normal Text><Keyword>this</Keyword><Symbol>.</Symbol><Object Member>info</Object Member><Symbol>;</Symbol><Normal Text> }</Normal Text><br/>
 <Normal Text>		}</Normal Text><br/>
 <Normal Text>	</Normal Text><Element></script></Element><br/>
 <Normal Text>	</Normal Text><Comment><!-- MustacheJS --></Comment><br/>
@@ -107,10 +107,13 @@
 <Nowdoc>HTML</Nowdoc><Normal Text>;</Normal Text><br/>
 <Keyword>echo</Keyword><PHP Text> </PHP Text><Heredoc><<<DOC</Heredoc><br/>
 <String><p>bla </String><Variable>$var</Variable><String> \</String><Variable>$var</Variable><String> bla\'</p></String><br/>
-<String> DOC</String><br/>
-<String> DOC;</String><br/>
-<String>DOC;blah</String><br/>
 <Heredoc>DOC</Heredoc><Normal Text>;</Normal Text><br/>
+<Keyword>echo</Keyword><PHP Text> </PHP Text><Heredoc><<<DOC</Heredoc><br/>
+<String>		<p>bla </String><Variable>$var</Variable><String> \</String><Variable>$var</Variable><String> bla\'</p></String><br/>
+<Heredoc>	DOC</Heredoc><Normal Text>;</Normal Text><br/>
+<Keyword>echo</Keyword><PHP Text> </PHP Text><Heredoc><<<DOC</Heredoc><br/>
+<String>    <p>bla </String><Variable>$var</Variable><String> \</String><Variable>$var</Variable><String> bla\'</p></String><br/>
+<Heredoc>  DOC</Heredoc><Normal Text>;</Normal Text><br/>
 <PHP Text></PHP Text><br/>
 <Keyword>echo</Keyword><PHP Text> </PHP Text><Decimal>123456</Decimal><PHP Text> </PHP Text><Decimal>1_2_34_5</Decimal><PHP Text> </PHP Text><Error>1</Error><PHP Text>__2 </PHP Text><Error>1</Error><PHP Text>_</PHP Text><Other>;</Other><br/>
 <Keyword>echo</Keyword><PHP Text> </PHP Text><Hex>0x12345af</Hex><PHP Text> </PHP Text><Hex>0x1_2_3_45_a_f</Hex><PHP Text> </PHP Text><Error>0</Error><PHP Text>x1__2 </PHP Text><Error>0</Error><PHP Text>x_1 </PHP Text><Error>0</Error><PHP Text>x1_ </PHP Text><Error>0</Error><PHP Text>x1g </PHP Text><Error>0</Error><PHP Text>xg</PHP Text><Other>;</Other><br/>

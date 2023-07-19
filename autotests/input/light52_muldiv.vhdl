@@ -127,6 +127,7 @@ begin
 -- Control logic ---------------------------------------------------------------
 
 control_counter: process(clk)
+    alias sig is <<signal g_test(0).i_test.sig : std_logic>>;
 begin
     if clk'event and clk='1' then
         if reset='1' then
@@ -242,18 +243,63 @@ end sequential;
 with Types; use Types;
 with Files_Map;
 
+package fixed_pkg is new IEEE.fixed_generic_pkg
+  generic map (
+    fixed_overflow_style => IEEE.fixed_float_types.fixed_saturate,
+    fixed_guard_bits     => 3,
+    no_warning           => false
+    );
+
 package p is
     type int_ptr is access integer;
     type rec is record
+        data  : std_logic_vector(31 downto 0);
+        ack   : std_logic;
         value : integer;
         link  : rec_ptr;
     end record;
     type int_vec is array (integer range <>) of integer;
     type int_vec_ptr is access int_vec;
+    procedure UNIFORM(variable SEED1, SEED2 : inout POSITIVE; variable X : out REAL);
     constant def_arr : t_int_array := (0 to 2 => 10);
+
+    -- type range
+    type newInt is range -4 to 3;
+    type CAPACITY is range 0 to 1E5 units
+        pF;
+        nF = 1000 pF;
+    end units;
+
+    -- type protected
+    type prot is protected
+        function meth(a : int) return bit;
+    end protected;
+
+    -- type protected body
+    type prot is protected body
+        variable var : positive;
+        constant const : boolean;
+
+        function meth(a : int) return bit is
+        begin
+        end function;
+    end protected body;
+
+    function \?=\ (L, R  : BOOLEAN) return BOOLEAN;
+
 end package;
 
 package body p is
+    function \?=\ (L, R : BOOLEAN) return BOOLEAN is
+    begin
+        if not (format(format'left) = '%') then
+            report "to_string: Illegal format string """ & format & '"'
+                severity error;
+            return "";
+        end if;
+        return L = R;
+    end function \?=\;
+
     procedure test is
         variable v : int_ptr;
         variable i : integer;
@@ -310,7 +356,7 @@ package body p is
         Res : Iir_List;
         El : Iir;
     begin
-        case L is
+        case to_integer(unsigned(CTRL_REF(x*4+3 downto x*4))) is
             when Null_Iir_List
             | Iir_List_All =>
                 return L;
@@ -331,6 +377,10 @@ end package body;
 -- Library bar
 context foo.test_context;
 
+context foo is
+    context foo.test_context;
+end context foo;
+
 entity concat is
 end entity;
 
@@ -341,6 +391,14 @@ end entity;
 
 architecture t of concat is
     type int_array is array (integer range <>) of integer;
+    type small is range 1 to 3;
+
+    component or_entity is
+    port(
+        input_1: in std_logic;
+        output: out std_logic
+        );
+    end component;
 begin
     process
         variable s : string(1 to 5);
@@ -362,18 +420,41 @@ begin
         return TotalSeconds * ClockFrequencyHz -1;
     end function;
 
-    component or_entity is
-    port(
-        input_1: in std_logic;
-        output: out std_logic
-        );
-    end component;
-
     type enum_type is (a, b, c, ..., z);
     type int_array is array(3 downto 0) of integer;
 
     subtype addr_int is integer range 0 to 65535;
     subtype sub_enum_type is enum_type range a to m;
+
+    inst1: entity work.counter1(rtl)
+        generic map (BITS1 => 8)
+        port map (
+            clk1 => Clock,
+            DATA_OUT   => pwm_data_o(3 downto 5),
+            COMP_IN(1 downto 0)  => compensate_i,
+            WRITE_IN   => (others => '0')
+        );
+
+    inst2: component counter2
+        generic map (BITS1 => 8)
+        port map (clk1 => Clock);
+
+    inst3: configuration counter3
+        generic map (BITS1 => 8)
+        port map (clk1 => Clock);
+
+    THE_PWM_GEN : pwm_generator
+        generic map(
+            dsfds => ds
+        )
+        port map(
+            CLK        => clk_i,
+            DATA_IN    => pwm_data_i,
+            DATA_OUT   => pwm_data_o(3 downto 5),
+            COMP_IN(1 downto 0)  => compensate_i,
+            WRITE_IN   => (others => '0')
+        );
+
 end architecture;
 
 architecture a2 of e is
@@ -393,3 +474,139 @@ begin
     begin
     end block;
 end architecture;
+
+architecture arch of ent is
+begin
+  LL: if test=10 generate
+   begin
+   end;
+  elsif test=5 generate
+   begin
+   end;
+  end generate;
+
+  LL: if l1: SPEED = "fast" generate
+  elsif test=5 generate
+  end generate;
+end architecture arch;
+
+
+architecture thing_arch of designthing is
+
+component pwm_generator
+  port(
+    CLK        : in std_logic;
+    DATA_IN    : in  std_logic_vector(15 downto 0);
+    );
+end component pwm_generator;
+
+attribute NOM_FREQ : string;
+attribute NOM_FREQ of clk_source : label is "133.00";
+signal clk_i  : std_logic;
+
+begin
+
+gen_no_comp: if TEMP = 0 generate
+  compensate_i <= (others => '0');
+end generate;
+
+gen_no_comp: for i in 0 to TEMP generate
+  compensate_i <= (others => '0') after 10 ns;
+  compensate_i <= (others => '0') ;
+end generate;
+
+---------------------------------------------------------------------------
+-- LED blinking when activity on inputs
+---------------------------------------------------------------------------
+PROC_TIMER : process begin
+  wait until rising_edge(clk_i);
+  timer <= timer + 1;
+  wait for 10 ns;
+  leds <= (last_inp xor inp_status(3 downto 0)) or leds or last_leds;
+  if timer = 0 then
+    leds <= not inp_status(3 downto 0);
+    last_leds <= x"0";
+  elsif gf then
+    fdsa <= '1';
+  end if;
+
+  xz: for x in 0 to 7 loop
+    dsadf;
+  end loop;
+
+  case c is
+    when XXX =>
+      c <= 1;
+      d <= 21321;
+    when YYYY =>
+      c <= 2;
+  end case; 
+end process;
+
+
+generate_with_begin: if TEMP = 0 generate
+  signal : test : std_logic;
+begin
+  compensate_i <= (others => '0');
+  if timer = 0 then
+    leds <= not inp_status(3 downto 0);
+    last_leds <= x"0";
+  elsif gf then
+    fdsa <= '1';
+  end if;  
+end generate generate_with_begin;
+
+PROC_TIMER : process
+  variable x : std_logic;
+begin
+  x := '0';
+end process PROC_TIMER;
+
+end architecture thing_arc;   --this is not correct (wrong name)
+
+1+1
+2ns
+
+1_2_3
+12_3
+1.2
+1.2_3
+1_3.2_3
+12_3e+1
+12_3e-1
+12_3e1_1
+12_3.4e1_1
+12_3e1_
+12_3e
+
+2#1_2_3#E+8
+2#1_2.3#E+8
+2#1_f2.3#
+
+3.14159_26536 -- A literal of type universal_real.
+5280          -- A literal of type universal_integer.
+10.7 ns       -- A literal of a physical type.
+O"4777"       -- A bit string literal.
+"54LS281"     -- A string literal.
+""            -- A string literal representing a null array.
+B"1111_1111_1111" -- Equivalent to the string literal "111111111111".
+X"FFF"            -- Equivalent to B"1111_1111_1111".
+O"777"            -- Equivalent to B"111_111_111".
+X"777"            -- Equivalent to B"0111_0111_0111".
+B"XXXX_01LH" -- Equivalent to the string literal "XXXX01LH"
+UO"27"       -- Equivalent to B"010_111"
+UO"2C"       -- Equivalent to B"011_CCC"
+SX"3W"       -- Equivalent to B"0011_WWWW"
+D"35"        -- Equivalent to B"100011"
+12UB"X1" -- Equivalent to B"0000_0000_00X1"
+12SB"X1" -- Equivalent to B"XXXX_XXXX_XXX1"
+12UX"F-" -- Equivalent to B"0000_1111_----"
+12SX"F-" -- Equivalent to B"1111_1111_----"
+12D"13"  -- Equivalent to B"0000_0000_1101"
+12UX"000WWW" -- Equivalent to B"WWWW_WWWW_WWWW"
+12SX"FFFC00" -- Equivalent to B"1100_0000_0000"
+12SX"XXXX00" -- Equivalent to B"XXXX_0000_0000"
+8D"511"  -- Error
+8UO"477" -- Error
+8SX"0FF" -- Error
+8SX"FXX" -- Error

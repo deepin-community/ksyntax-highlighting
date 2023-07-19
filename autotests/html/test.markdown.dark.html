@@ -200,7 +200,7 @@ normal
 <span style="color:#7a7c7d;">#!/usr/bin/env bash</span>
 
 <span style="color:#fdbc4b;font-weight:bold;">for</span> f <span style="font-weight:bold;">in</span> <span style="color:#27ae60;">*</span><span style="font-weight:bold;">;</span> <span style="color:#fdbc4b;font-weight:bold;">do</span>
-    <span style="color:#7f8c8d;">echo</span> <span style="color:#f44f4f;">&quot;</span><span style="color:#27aeae;">$f</span><span style="color:#f44f4f;">&quot;</span>
+    <span style="color:#7f8c8d;">echo</span> <span style="color:#f44f4f;">&quot;</span><span style="color:#27aeae;">$</span><span style="color:#27aeae;">f</span><span style="color:#f44f4f;">&quot;</span>
 <span style="color:#fdbc4b;font-weight:bold;">done</span>
 <span style="color:#c45b00;">```</span>
 
@@ -224,7 +224,7 @@ Q<span style="color:#3f8058;">::</span>Q<span style="color:#3f8058;">()</span> <
 <span style="color:#c45b00;">```c</span>
 <span style="color:#27ae60;">#include </span><span style="color:#27ae60;">&lt;stdio.h&gt;</span>
 <span style="color:#27ae60;">#include </span><span style="color:#27ae60;">&quot;stdint.h&quot;</span>
-<span style="color:#27ae60;">#define SOME_VAR 1</span>
+<span style="color:#27ae60;">#define SOME_VAR </span><span style="color:#f67400;">1</span>
 
 <span style="color:#2980b9;">static</span> <span style="color:#2980b9;">uint64_t</span> intWithSuffix <span style="color:#3f8058;">=</span> <span style="color:#f67400;">42</span><span style="color:#7f8c8d;">ull</span> <span style="color:#3f8058;">+</span> <span style="color:#3f8058;">~</span><span style="color:#f67400;">1233</span><span style="color:#7f8c8d;">L</span><span style="color:#3f8058;">;</span>
 <span style="color:#2980b9;">static</span> <span style="color:#2980b9;">int</span> octNum <span style="color:#3f8058;">=</span> <span style="color:#f67400;">07232</span><span style="color:#3f8058;">;</span>
@@ -475,6 +475,13 @@ f <span style="color:#27ae60;font-weight:bold;">&lt;-</span> <span style="color:
 <span style="font-weight:bold;">Select</span> col1, col2 <span style="font-weight:bold;">From</span> stuff <span style="font-weight:bold;">Where</span> stuff<span style="color:#3daee9;">.</span>col1 <span style="font-weight:bold;">IS</span> <span style="font-weight:bold;">NOT</span> <span style="font-weight:bold;">NuLL</span>;
 <span style="color:#c45b00;">```</span>
 
+<span style="color:#8e44ad;font-weight:bold;">## Nim</span>
+
+<span style="color:#c45b00;">```nim</span>
+<span style="font-weight:bold;">proc</span> <span style="color:#f44f4f;font-weight:bold;">main</span><span style="font-weight:bold;">()</span> <span style="color:#7a7c7d;">=</span>
+    <span style="color:#fdbc4b;font-weight:bold;">echo</span> <span style="color:#f44f4f;">&quot;Hello world!&quot;</span>
+<span style="color:#c45b00;">```</span>
+
 <span style="color:#8e44ad;font-weight:bold;">## TypeScript</span>
 
 <span style="color:#c45b00;">```ts</span>
@@ -551,7 +558,7 @@ Section Header
 
 <span style="color:#c45b00;">~~~bash</span>
 <span style="color:#fdbc4b;font-weight:bold;">for</span> f <span style="font-weight:bold;">in</span> <span style="color:#27ae60;">*</span><span style="font-weight:bold;">;</span> <span style="color:#fdbc4b;font-weight:bold;">do</span>
-    <span style="color:#7f8c8d;">echo</span> <span style="color:#f44f4f;">&quot;</span><span style="color:#27aeae;">$f</span><span style="color:#f44f4f;">&quot;</span>
+    <span style="color:#7f8c8d;">echo</span> <span style="color:#f44f4f;">&quot;</span><span style="color:#27aeae;">$</span><span style="color:#27aeae;">f</span><span style="color:#f44f4f;">&quot;</span>
 <span style="color:#fdbc4b;font-weight:bold;">done</span>
 <span style="color:#c45b00;">~~~</span>
 

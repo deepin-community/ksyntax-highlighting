@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.16)
 
-set(KF_VERSION "5.90.0")
+set(KF_VERSION "5.103.0")
 project(KSyntaxHighlighting VERSION ${KF_VERSION})
 
-find_package(ECM 5.90.0 REQUIRED NO_MODULE)
+find_package(ECM 5.103.0 REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 if(POLICY CMP0063)
     cmake_policy(SET CMP0063 NEW)
@@ -26,7 +26,8 @@ include(ECMMarkNonGuiExecutable)
 include(ECMAddQch)
 include(ECMOptionalAddSubdirectory)
 include(ECMGenerateExportHeader)
-
+include(ECMDeprecationSettings)
+include(ECMQmlModule)
 
 ecm_setup_version(PROJECT
     VARIABLE_PREFIX SyntaxHighlighting
@@ -81,7 +82,7 @@ add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt 
 #
 # Translations
 #
-ecm_install_po_files_as_qm(po)
+ecm_install_po_files_as_qm(poqm)
 
 # tell the framework if it shall use the syntax files from the resource
 if (QRC_SYNTAX)
@@ -92,7 +93,10 @@ endif()
 if (NO_STANDARD_PATHS)
     add_definitions(-DNO_STANDARD_PATHS)
 endif()
-add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x050f02)
+
+ecm_set_disabled_deprecation_versions(
+    QT 5.15.2
+)
 
 #
 # Actually build the stuff
@@ -142,7 +146,7 @@ if(TARGET KF5SyntaxHighlighting)
 endif()
 
 install(FILES "${CMAKE_CURRENT_BINARY_DIR}/ksyntaxhighlighting_version.h"
-        DESTINATION "${KDE_INSTALL_INCLUDEDIR_KF}"
+        DESTINATION "${KDE_INSTALL_INCLUDEDIR_KF}/KSyntaxHighlighting"
         COMPONENT Devel)
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)

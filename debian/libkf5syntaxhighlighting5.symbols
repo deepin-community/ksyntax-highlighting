@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 5.78.0 armel armhf riscv64
+# SymbolsHelper-Confirmed: 5.103.0 armhf
 libKF5SyntaxHighlighting.so.5 libkf5syntaxhighlighting5 #MINVER#
 * Build-Depends-Package: libkf5syntaxhighlighting-dev
  _ZN19KSyntaxHighlighting10Definition14setKeywordListERK7QStringRK11QStringList@Base 5.62.0
@@ -211,6 +211,7 @@ libKF5SyntaxHighlighting.so.5 libkf5syntaxhighlighting5 #MINVER#
  (arch=!armel !riscv64)_ZTISt11_Mutex_baseILN9__gnu_cxx12_Lock_policyE2EE@Base 5.28.0
  (arch=armel riscv64)_ZTISt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE1EE@Base 5.28.0
  (arch=!armel !riscv64)_ZTISt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE@Base 5.28.0
+ (arch=armhf)_ZTISt19_Sp_make_shared_tag@Base 5.103.0
  _ZTSN19KSyntaxHighlighting15AnsiHighlighterE@Base 5.77.0
  _ZTSN19KSyntaxHighlighting15HtmlHighlighterE@Base 5.28.0
  _ZTSN19KSyntaxHighlighting17SyntaxHighlighterE@Base 5.28.0

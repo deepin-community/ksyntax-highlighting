@@ -1,4 +1,125 @@
-ksyntax-highlighting (5.90.0-1) experimental; urgency=medium
+ksyntax-highlighting (5.103.0-3) unstable; urgency=medium
+
+  * Team upload.
+  * Link with atomic also on powerpc.
+
+ -- Pino Toscano <pino@debian.org>  Sun, 26 Feb 2023 16:34:47 +0100
+
+ksyntax-highlighting (5.103.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Remove inactive Uploaders.
+  * Modernize building:
+    - add the dh-sequence-kf5 build dependency to use the kf5 addon
+      automatically
+    - add the dh-sequence-pkgkde-symbolshelper build dependency to use the
+      pkgkde_symbolshelper automatically
+    - drop the pkg-kde-tools build dependency, no more explicitly needed
+    - drop all the manually specified addons and buildsystem for dh
+  * Remove breaks/replaces for existing packages with versions older than
+    oldstable.
+  * Make sure to link with atomic on architectures that need it, i.e.
+    armel m68k mipsel sh4.
+  * Update symbols files from the logs of buildds.
+
+ -- Pino Toscano <pino@debian.org>  Tue, 14 Feb 2023 08:36:41 +0100
+
+ksyntax-highlighting (5.103.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (5.103.0).
+  * Update build-deps and deps with the info from cmake.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sun, 12 Feb 2023 21:44:25 +0100
+
+ksyntax-highlighting (5.102.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (5.102.0).
+  * Update build-deps and deps with the info from cmake.
+  * Bump Standards-Version to 4.6.2, no change required.
+  * Refresh copyright information.
+  * Drop optional symbol removed upstream.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sun, 22 Jan 2023 21:35:03 +0100
+
+ksyntax-highlighting (5.101.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (5.101.0).
+  * Update build-deps and deps with the info from cmake.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Tue, 13 Dec 2022 07:40:25 +0100
+
+ksyntax-highlighting (5.100.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (5.99.0).
+  * Update build-deps and deps with the info from cmake.
+  * New upstream release (5.100.0).
+  * Update build-deps and deps with the info from cmake.
+  * Refresh copyright information.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sat, 19 Nov 2022 23:18:59 +0100
+
+ksyntax-highlighting (5.98.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (5.98.0).
+  * Update build-deps and deps with the info from cmake.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sun, 18 Sep 2022 23:11:39 +0200
+
+ksyntax-highlighting (5.97.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (5.97.0).
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sun, 14 Aug 2022 18:55:31 +0200
+
+ksyntax-highlighting (5.96.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (5.96.0).
+  * Bump Standards-Version to 4.6.1, no change required.
+  * Add lintian override for kate-syntax-highlighter having no manpages.
+  * Add overrides for lintian not liking the look of test data files.
+  * Review copyright information.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sun, 31 Jul 2022 13:33:00 +0200
+
+ksyntax-highlighting (5.94.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (5.94.0).
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Thu, 19 May 2022 23:59:03 +0200
+
+ksyntax-highlighting (5.93.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (5.92.0).
+  * New upstream release (5.93.0).
+
+  [ Helmut Grohne ]
+  * Fix FTCBFS: Add missing native dependencies qtbase5-dev and qttools5-dev.
+    (Closes: #1006869)
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Wed, 11 May 2022 23:22:45 +0200
+
+ksyntax-highlighting (5.90.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Drop the libqt5xmlpatterns5-dev dependency from
+    libkf5syntaxhighlighting-dev, as no devel bits require the former.
+  * CI: enable again blhc, as it works fine now with blhc 0.13.
+  * Update symbols files from the logs of buildds.
+  * Annotate the perl build dependency as :any, as it is used during build
+    to run scripts (and thus any runnable perl will work fine).
+
+ -- Pino Toscano <pino@debian.org>  Sat, 26 Feb 2022 10:24:26 +0100
+
+ksyntax-highlighting (5.90.0-1) unstable; urgency=medium
 
   [ Norbert Preining ]
   * New upstream release (5.89.0).

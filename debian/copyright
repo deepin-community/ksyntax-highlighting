@@ -4,142 +4,312 @@ Source: https://invent.kde.org/frameworks/syntax-highlighting
 Upstream-Contact: kde-frameworks-devel@kde.org
 
 Files: *
-Copyright: 2009-2020, Alex Turbov <I.zaufi@gmail.com>
-           2004, Alexander Neundorf <neundorf@kde.org>
-           2017, Alexis Sellier, the Less Core Team, Contributors, The MIT License
-           2002, Anders Lund <anders@alweb.dk>
-           2012, Antoni Boucher <bouanto@hotmail.com>
-           2007, Aziz Köksal <aziz.koeksal@gmail.com>
-           2011, Caspar Hasenclever
-           2005, Chris Martin <linux@chriscodes.com>
-           2014, Christoph Cullmann <cullmann@kde.org>
-           2008, Chusslove Illich <caslav.ilic@gmx.net>
-           2008, Diggory Hardy
-           2004-2005, Dominik Haumann
-           2016, Dominik Haumann <dhaumann@kde.org>
-           2004-2005, Dominik Haumann <dhdev@gmx.de>
-           2016, Fernand Veilleux <fernveilleux@gmail.com>
-           2002-2018, Free Software Foundation
-           2000-2013, Free Software Foundation, Inc
-           2004, Goffart Olivier
-           2004, Irv Mullins
-           2004, Jan Villat <jan.villat@net2000.ch>
-           2007, Jari-Matti Mäkelä <jmjm@iki.fi>
-           2018, Jeffrey Arnold
-           2012, Johannes Schwenk <johannes.schwenk@adition.com>
-           2011, Jonathan Kolberg <bulldog98@kubuntu-de.org>
-           2012, Jose A. Ruiz
-           2008, Joseph Wenninger
-           2001, Joseph Wenninger <jowenn@kde.org>
-           2005, KDE Russian translation team
-           2002-2004, KDE Team
-           2007, KDE i18n Project for Vietnamese
-           2016, Kevin Funk <kfunk@kde.org>
-           2010, Matt Williams <matt@milliams.com>
-           2006-2014, Matthew Woehlke <mw_triad@users.sourceforge.net>
-           2001-2002, Meni Livne <livne@kde.org>
-           2014, Michal Humpula <michal.humpula@seznam.cz>
-           2011, Miquel Sabaté <mikisabate@gmail.com>
-           2018, Modula-2 Software Foundation
-           2018-2020, Nibaldo González S <nibgonz@gmail.com>
-           2006, Richard Dale <rdale@foton.es>
-           2008, Robin Pedersen <robinpeder@gmail.com>
-           2007-2009, Rosetta Contributors and Canonical Ltd
-           2007, Sebastian Pipping <webmaster@hartwork.org>
-           2004, Sebastian Vuorinen <sebastian.vuorinen@helsinki.fi>
-           2003, Simon Huerlimann <simon.huerlimann@access.unizh.ch>
-           2004, Simon J Mackenzie <project.katedxml@smackoz.fastmail.fm>
-           2004, Stefan Lang <langstefan@gmx.at>
-           2002-2019, This_file_is_part_of_KDE
-           2012, Torsten Eichstädt
-           2016, Volker Krause <vkrause@kde.org>
-           2008, Wilbert Berendsen <info@wilbertberendsen.nl>
-           2004-2006, Wilbert Berendsen <wilbert@kde.nl>
-           2012, alexander Kabakov. http://kabakov.wordpress.com
-           2007, Красимир Беров <k.berov@gmail.com>
-License: LGPL-2+
-
-Files: autotests/foldingtest.cpp
-       autotests/highlighter_benchmark.cpp
-       autotests/htmlhighlighter_test.cpp
-       autotests/repository_benchmark.cpp
-       autotests/syntaxrepository_test.cpp
-       autotests/test-config.h.in
-       autotests/testhighlighter.cpp
-       autotests/theme_test.cpp
-       autotests/wildcardmatcher_test.cpp
-       data/syntax/apparmor.xml
-       data/syntax/jam.xml
-       data/syntax/logcat.xml
-       data/syntax/rust.xml
-       data/syntax/selinux-cil.xml
-       data/syntax/selinux-fc.xml
-       data/syntax/selinux.xml
-       examples/codeeditor/codeeditor.cpp
-       examples/codeeditor/codeeditor.h
-       examples/codeeditor/main.cpp
-       examples/codepdfprinter/codepdfprinter.cpp
-       examples/codepdfprinter/codepdfprinter.h
-       examples/codepdfprinter/main.cpp
-       src/cli/kate-syntax-highlighter.cpp
-       src/indexer/katehighlightingindexer.cpp
-       src/lib/abstracthighlighter.cpp
-       src/lib/abstracthighlighter.h
-       src/lib/abstracthighlighter_p.h
-       src/lib/context.cpp
-       src/lib/context_p.h
-       src/lib/definition.cpp
-       src/lib/definition.h
-       src/lib/definition_p.h
-       src/lib/definitionref_p.h
-       src/lib/foldingregion.h
-       src/lib/format.cpp
-       src/lib/format_p.h
-       src/lib/htmlhighlighter.cpp
-       src/lib/htmlhighlighter.h
-       src/lib/keywordlist.cpp
-       src/lib/keywordlist_p.h
-       src/lib/matchresult_p.h
-       src/lib/repository.h
-       src/lib/rule_p.h
-       src/lib/state.cpp
-       src/lib/state.h
-       src/lib/state_p.h
-       src/lib/syntaxhighlighter.cpp
-       src/lib/syntaxhighlighter.h
-       src/lib/theme.h
-       src/lib/wildcardmatcher.cpp
-       src/lib/xml_p.h
-Copyright: 2014-2018, Christoph Cullmann <cullmann@kde.org>
-           2018, Dominik Haumann <dhaumann@kde.org>
+Copyright: 2021, Alberto Salvia Novella <https://es20490446e.wordpress.com>
+           2020, Aleix Pol Gonzalez <aleixpol@kde.org>
+           2020-2021, Alex Turbov <i.zaufi@gmail.com>
+           2020, Alexander Schlarb <alexander@ninetailed.ninja>
+           2018, Andrew Crouthamel <andrew.crouthamel@kdemail.net>
+           2016, Arctic Ice Studio <development@arcticicestudio.com>
+           2014-2020, Christoph Cullmann <cullmann@kde.org>
+           2018, Dan Hedgecock
+           2012-2018, Dominik Haumann <dhaumann@kde.org>
+           2016, Dracula Theme
+           2018, Eike Hein <hein@kde.org>
+           2011, Ethan Schoonover
+           2020, Frederik Banning <laubblaeser@live.com>
            2019, Friedrich W. H. Kossebau <kossebau@kde.org>
-           2006, Mildred <silkensedai@online.fr>
-           2017-2019, Nibaldo González S <nibgonz@gmail.com>
+           2016-2020, GitHub Inc.
+           2021, Igor Kushnir <igorkuo@gmail.com>
+           2016, Ike Ku
+           James Turnbull <james@lovedthanlost.net>
+           2020-2021, Jonathan Poelen <jonathan.poelen@gmail.com>
+           2020, Juraj Oravec <jurajoravec@mailo.com>
+           2021, Marco Rebhan <me@dblsaiko.net>
+           2020, Nibaldo González <nibgonz@gmail.com>
+           2017-2020, Nibaldo González S. <nibgonz@gmail.com>
+           2007, Paolo Borelli <pborelli@gnome.org>, GtkSourceView team
+           2017, Pavel Pertsev <morhetz@gmail.com>
            2007, Sebastian Pipping <webmaster@hartwork.org>
-           2015, The Rust Project Developers
-           2016, Volker Krause <vkrause@kde.org>
-License: Expat
+           2021, shenlebantongying <shenlebantongying@gmail.com>
+           2016, Sven Greb <development@svengreb.de>
+           2016-2022, Volker Krause <vkrause@kde.org>
+           2020, Waqar Ahmed <waqar.17a@gmail.com>
+           2006, Wimer Hazenberg
+License: MIT
+Comment: Automatically extracted
 
-Files: autotests/folding/highlight.prg.fold
-       autotests/html/highlight.prg.html
-       autotests/input/highlight.prg
-       autotests/reference/highlight.prg.ref
-       data/syntax/abap.xml
+Files: data/generators/generate-cmake-syntax.py
+       data/generators/get-Qt-macros.sh
+       data/generators/get-Qt-classes.sh
+       data/schema/language.xsd
+       data/syntax/adblock.xml
+       data/syntax/ahk.xml
+       data/syntax/alert.xml
+       data/syntax/ansic89.xml
+       data/syntax/asciidoc.xml
+       data/syntax/brightscript.xml
+       data/syntax/changelog.xml
+       data/syntax/cil.xml
+       data/syntax/clist.xml
+       data/syntax/coffee.xml
+       data/syntax/comments.xml
+       data/syntax/commonlisp.xml
+       data/syntax/component-pascal.xml
+       data/syntax/dart.xml
+       data/syntax/dot.xml
+       data/syntax/doxygen.xml
+       data/syntax/eiffel.xml
+       data/syntax/elm.xml
+       data/syntax/email.xml
+       data/syntax/flatbuffers.xml
+       data/syntax/fluent.xml
+       data/syntax/fortran-free.xml
+       data/syntax/gd-script.xml
+       data/syntax/gdl.xml
+       data/syntax/gherkin.xml
+       data/syntax/gettext.xml
+       data/syntax/grammar.xml
+       data/syntax/graphql.xml
+       data/syntax/haxe.xml
+       data/syntax/innosetup.xml
+       data/syntax/intelhex.xml
+       data/syntax/jam.xml
+       data/syntax/java-properties.xml
+       data/syntax/javascript.xml
+       data/syntax/javascript-react.xml
+       data/syntax/julia.xml
+       data/syntax/ld.xml
+       data/syntax/ldif.xml
+       data/syntax/makefile.xml
+       data/syntax/matlab.xml
+       data/syntax/metamath.xml
+       data/syntax/mib.xml
+       data/syntax/mips.xml
+       data/syntax/modelines.xml
+       data/syntax/modula-2.xml
+       data/syntax/modula-2-iso-only.xml
+       data/syntax/modula-2-pim-only.xml
+       data/syntax/modula-2-r10-only.xml
+       data/syntax/mustache.xml
+       data/syntax/nemerle.xml
+       data/syntax/ninja.xml
+       data/syntax/noweb.xml
+       data/syntax/objectivecpp.xml
+       data/syntax/oors.xml
+       data/syntax/opal.xml
+       data/syntax/orgmode.xml
+       data/syntax/overpassql.xml
+       data/syntax/pascal.xml
+       data/syntax/pike.xml
+       data/syntax/pli.xml
+       data/syntax/pony.xml
+       data/syntax/python.xml
+       data/syntax/qdocconf.xml
+       data/syntax/qmake.xml
+       data/syntax/qml.xml
+       data/syntax/racket.xml
+       data/syntax/raku.xml
+       data/syntax/rdoc.xml
+       data/syntax/renpy.xml
+       data/syntax/retro.xml
+       data/syntax/rsiidl.xml
+       data/syntax/rust.xml
+       data/syntax/sass.xml
+       data/syntax/scheme.xml
+       data/syntax/sieve.xml
+       data/syntax/smali.xml
+       data/syntax/sml.xml
+       data/syntax/snort_suricata.xml
+       data/syntax/solidity.xml
+       data/syntax/spdx-comments.xml
+       data/syntax/stan.xml
+       data/syntax/swift.xml
+       data/syntax/systemd-unit.xml
+       data/syntax/tads3.xml
+       data/syntax/terraform.xml
+       data/syntax/tiger.xml
+       data/syntax/todo.xml
+       data/syntax/typescript.xml
+       data/syntax/typescript-react.xml
+       data/syntax/velocity.xml
+       data/syntax/verilog.xml
+       data/syntax/vhdl.xml
+       data/syntax/wayland-trace.xml
+       data/syntax/yara.xml
+       data/syntax/zsh.xml
+Copyright: Aaron Puchert
+           2011-2013, Alex Turbov
+           2017-2020, Alex Turbov <i.zaufi@gmail.com>
+           Alex Turbov <i.zaufi@gmail.com>
+           2002, Anders Lund <anders@alweb.dk>
+           Anders Lund <anders@alweb.dk>
+           Andreas Cord-Landwehr <cordlandwehr@kde.org>
+           Andreas Gratzer
+           Andreas Hochsteger <e9625392@student.tuwien.ac.at>
+           B. Kowarsch <trijezdci@github>
+           Bonghyun Kim <bonghyun.d.kim@gmail.com>
+           caminoix + Kamil Skalski (Nazgul)
+           Chad Joan
+           Chris Higgs <chiggs.99@gmail.com>
+           Christoph Cullmann <cullmann@absint.com>
+           Christoph Cullmann <cullmann@kde.org>
+           Daniel Levin <dendy.ua@gmail.com>
+           2005, Dominik Haumann <dhdev@gmx.de>
+           Dominik Haumann <dhaumann@kde.org>
+           Fabian Wunsch <fabian@uriah.heep.sax.de>
+           Florent Ouchet <outchy@users.sourceforge.net>
+           Franchin Matteo <fnch@libero.it>
+           Gary Wang
+           Gennady Telegin <gepo@lvk.cs.msu.su>
+           Gernot Gebhard <gebhard@absint.com>
+           Harald Fernengel
+           I. Elland <igor@elland.me>
+           Jaap Keuter <jaap.keuter@xs4all.nl>
+           Jan Michel <jan@mueschelsoft.de>
+           John Christopher <John@animalsinneed.net>
+           Jonathan Poelen <jonathan.poelen@gmail.com>
+           Jonathan Schmidt-Dominé <devel@the-user.org>
+           2001, Joseph Wenninger <jowenn@kde.org>
+           Joseph Wenninger <jowenn@kde.org>
+           Kevin Funk <kevin.funk@kdab.com>
+           Leonardo Finetti, www.finex.org
+           Luigi Calligaris <luigi.calligaris@stfc.ac.uk>
+           Lyle Putnam <lcputnam@gmail.com>
+           Mario Aichinger
+           Markus Fraenz <fraenz@linmpi.mpg.de>
+           Matthias Böhm (MatthiasBoehm87 _at_ gmail.com)
+           Max Shawabkeh <max99x@gmail.com>
+           Michael Bueker
+           Michael Hansen
+           Miklos Marton <martonmiklosqdev@gmail.com>
+           2006, Mildred <silkensedai@online.fr>
+           Milian Wolff <mail@milianw.de>
+           2018, Modula-2 Software Foundation
+           2018-2020, Nibaldo González S. <nibgonz@gmail.com>
+           Nibaldo González <nibgonz@gmail.com>
+           Nikolay Kultashev <nkultashev@yandex.ru>
+           Nikos Chantziaras <realnc@gmail.com>
+           Pablo Oliveira
+           Paul Pogonyshev
+           Per Wigren <wigren@home.se>
+           Postula Loïs <lois.postula@live.be>
+           Robert Kaiser <kairo@kairo.at>
+           Rocky Scaletta <rocky@purdue.edu>
+           Ryan Dalzell <ryan@tullyroan.com>
+           Samu Voutilainen <kde.gherkin-syntax@smar.fi>
+           slbtty <shenlebantongying@gmail.com>
+           Scott Collins <scc@scottcollins.net>
+           Sebastian Pipping <webmaster@hartwork.org>
+           Sebastian Vuorinen
+           2003, Simon Huerlimann <simon.huerlimann@access.unizh.ch>
+           Sinel
+           Stefan Endrullis <stefan@endrullis.de>
+           Stefan Stoll, Swiss Federal Institute of Technology, Zurich
+           Thuck <denisdoria@gmail.com>
+           Timothy E. Holy, Washington University in St. Louis
+           2015, The Rust Project Developers
+           Unnamed people and Liu Sizhuang <oldherl@gmail.com>
+           Volker Krause <vkrause@kde.org>
+           Waqar Ahmed <waqar.17a@gmail.com>
+           Werner Braun <wb@o3-software.de>
+           Whitehawk Stormchaser <zerokode@gmx.net>
+           2008, Wilbert Berendsen <info@wilbertberendsen.nl>
+           Yevgen Voronenko <ysv22@drexel.edu>
+License: MIT
+Comment: Manually collected
+
+Files: autotests/folding/highlight.lgt.fold
+       autotests/folding/test.smali.fold
+       autotests/html/highlight.lgt.dark.html
+       autotests/html/highlight.lgt.html
+       autotests/html/test.smali.dark.html
+       autotests/html/test.smali.html
+       autotests/input/highlight.lgt
+       autotests/input/test.smali
+       autotests/reference/highlight.lgt.ref
+       autotests/reference/test.smali.ref
+Copyright: Logtalk copright holder
+           2006, The Android Open Source Project
+License: Apache-2.0
+Comment: Manually collected
+
+Files: data/syntax/llvm.xml
+       data/syntax/logtalk.xml
+Copyright: LLVM Team
+           Paulo Moura <pmoura@logtalk.org>
+License: Apache-2.0
+Comment: Manually collected
+
+Files: data/syntax/ample.xml
+Copyright: Christian Parg (cparg_(at)_gmx_de)
+License: Apache-2.0_OR_LGPL-2.0-or-later
+ This file comes without any warranty and is licensed under Apache
+ License or LGPL V2 or later
+Comment: Manually collected
+
+Files: data/syntax/lpc.xml
+       data/syntax/template-toolkit.xml
+Copyright: Andreas Klauer <Andreas.Klauer@metamorpher.de>
+           2007, Красимир Беров <k.berov@gmail.com>
+License: Artistic
+
+Files: autotests/folding/devicedetect.vcl.fold
+       autotests/folding/vmod.vcc.fold
+       autotests/input/devicedetect.vcl
+       autotests/input/vmod.vcc
+Copyright: 2010-2017, Varnish Software AS
+           2016-2018, Varnish Cache project
+License: BSD-2-Clause
+Comment: Automatically extracted
+
+Files: src/quick/CMakeLists.txt
+Copyright: 2018, Eike Hein <hein@kde.org>
+           2021, Volker Krause <vkrause@kde.org>
+License: BSD-3-Clause
+Comment: Automatically extracted
+
+Files: data/syntax/ccss.xml
+       data/syntax/m4.xml
+       data/syntax/purescript.xml
+       data/syntax/tcl.xml
+Copyright: 2011, Cybernetica AS ( http://www.cyber.ee/ )
+           Gleb Popov <6yearold@gmail.com>
+           Irsid - Arcelor Innovation R&D
+           Massimiliano Torromeo
+License: BSD-3-Clause
+Comment: Manually collected
+
+Files: docs/qml-api.md
+Copyright: 2020-2021, Volker Krause <vkrause@kde.org>
+License: CC0-1.0                            
+
+Files: data/syntax/carto-css.xml
+Copyright: Lukas Sommer
+License: CC0-1.0
+Comment: Manually collected
+
+Files: data/syntax/doxyfile.xml
+Copyright: 2016-2017, Ernst Maurer <ernst.maurer@gmail.com>
+License: Expat-like-Highscore
+
+Files: data/syntax/mediawiki.xml
+Copyright: none
+License: GFDL
+Comment: Manually collected
+
+Files: data/syntax/abap.xml
        data/syntax/asn1.xml
        data/syntax/bitbake.xml
        data/syntax/clipper.xml
        data/syntax/context.xml
-       data/syntax/email.xml
        data/syntax/fasm.xml
        data/syntax/fastq.xml
        data/syntax/freebasic.xml
        data/syntax/gap.xml
        data/syntax/gitolite.xml
-       data/syntax/inform.xml
        data/syntax/j.xml
        data/syntax/json.xml
        data/syntax/mandoc.xml
-       data/syntax/markdown.xml
        data/syntax/monobasic.xml
        data/syntax/nagios.xml
        data/syntax/octave.xml
@@ -149,324 +319,726 @@ Files: autotests/folding/highlight.prg.fold
        data/syntax/rmarkdown.xml
        data/syntax/roff.xml
        data/syntax/sed.xml
-       data/syntax/wml.xml
        data/syntax/xharbour.xml
-Copyright: 2005, Carl A Joslin <carl.joslin@joslin.dyndns.org>
-           2008, Darrin Yeager. http://www.dyeager.org
+Copyright: Andor Dávid <david-andor@kozpontiagy.hu>
+           Andrey Cherepanov <sibskull@mail.ru>
+           Bart Sas <bart.sas@gmail.com>
+           Chris Neugebauer <chrisjrn@gmail.com>
+           2005, Davide Bettio <davide.bettio@kdemail.net>
            2014, Dirk Sarpe <dsarpe@posteo.de>
+           Gastón Martini
+           Giancarlo Niccolai <giancarlo@niccolai.ws>
+           greg heil <gheil.j@gmail.com>"
+           Igor Zhuravlov <zhuravlov.ip@ya.ru>
+           Ivan Koveshnikov
            2012, Johannes Schwenk <johannes.schwenk@adition.com>
-           2004, Roland Nagy
+           Jose Joao Morais
+           Luis Silvestre and Federico Zenith
+           Marcos Antonio Alvarez Costales <busgosin@hotmail.com>
+           Matthew Woehlke <mw_triad@users.sourceforge.net>
+           2019, Nibaldo González S. <nibgonz@gmail.com>
+           Philipp A
+           Philipp A. <flying-sheep@web.de>
+           Philippe Rigault
+           Rares Stanciulescu <rstanciu@operamail.com>
+           rCX <rCX12@yahoo.com>
+           2005, Ruben Carlo Benante <dr.beco@gmail.com>
+           Sebastian Pipping <sebastian@pipping.org>
 License: GPL
+Comment: Manually collected
+
+Files: data/syntax/markdown.xml
+Copyright: 2009, Claes Holmerson. http://github.com/claes/kate-markdown/
+           2008, Darrin Yeager. http://www.dyeager.org/
+License: GPL_OR_BSD_with_parts_under_MIT
+ Dual-Licensed under both GPL and BSD licenses.
+ .
+ changes under MIT license
+Comment: Manually collected
+
+Files: autotests/folding/test.bb.fold
+       autotests/input/test.bb
+Copyright: 2009, Chris Schlaeger <chris@linux.com>
+License: GPL-2.0-only
+Comment: Manually collected
+
+Files: data/syntax/nesc.xml
+       data/syntax/r.xml
+       data/syntax/taskjuggler.xml
+Copyright: 2009, Chris Schlaeger <chris@linux.com>
+           Shakthi Kannan
+           2006, Thomas Friedrichsmeier, Arne Henningsen, and the RKWard Team
+License: GPL-2.0-only
+Comment: Manually collected
+
+Files: data/syntax/asm-avr.xml
+       data/syntax/go.xml
+       data/syntax/ilerpg.xml
+       data/syntax/inform.xml
+       data/syntax/mel.xml
+       data/syntax/nasm.xml
+       data/syntax/replicode.xml
+       data/syntax/wml.xml
+       data/syntax/gnuassembler.xml
+Copyright: Bogdan Drozdowski <bogdandr@op.pl>
+           Karl Erlandsen <karlerlandsen@yahoo.com>
+           2008-2011, Ignacio Riquelme Morelle <shadowm2006@gmail.com>
+           2002, John Zaitseff <J.Zaitseff@zap.org.au>
+           2010, Jonathan Schmidt-Dominé <devel@the-user.org>
+           2011, Lyle Putnam <lcputnam@gmail.com>
+           2014, Martin Sandsmark <martin.sandsmark@kde.org>
+           2010, Miquel Sabaté <mikisabate@gmail.com>
+           2003-2006, Nick Roux <nick@sundown.homeip.net>
+           Nicola Gigante <nicola.gigante@gmail.com>
+           2004, Roland Nagy
+           2002, Roland Pabel <roland@pabel.name>
+           2021, Waqar Ahmed <waqar.17a@gmail.com>
+           Zachary Palmer <zep01@bahj.com>
+License: GPL-2.0-or-later
+Comment: Manually collected
+
+Files: data/syntax/kconfig.xml
+Copyright: Martin Walch <walch.martin@web.de>
+License: GPL-3.0-only
+Comment: Manually collected
+
+Files: data/syntax/systemverilog.xml
+       data/syntax/vera.xml
+Copyright: 2008-2009, Sean O'Boyle <seanoboyle@intelligentdv.com>
+License: GPL-3.0-or-later
+Comment: Manually collected
+
+Files: data/generators/generate-php.pl
+       data/syntax/4dos.xml
+       data/syntax/abc.xml
+       data/syntax/actionscript.xml
+       data/syntax/agda.xml
+       data/syntax/ansys.xml
+       data/syntax/apache.xml
+       data/syntax/asm-dsp56k.xml
+       data/syntax/asm-m68k.xml
+       data/syntax/asp.xml
+       data/syntax/ats.xml
+       data/syntax/awk.xml
+       data/syntax/bash.xml
+       data/syntax/bibtex.xml
+       data/syntax/bmethod.xml
+       data/syntax/boo.xml
+       data/syntax/cg.xml
+       data/syntax/cisco.xml
+       data/syntax/cpp.xml
+       data/syntax/css.xml
+       data/syntax/curry.xml
+       data/syntax/d.xml
+       data/syntax/djangotemplate.xml
+       data/syntax/dosbat.xml
+       data/syntax/dtd.xml
+       data/syntax/erlang.xml
+       data/syntax/fgl-4gl.xml
+       data/syntax/fgl-per.xml
+       data/syntax/fish.xml
+       data/syntax/fsharp.xml
+       data/syntax/gcc.xml
+       data/syntax/gdb.xml
+       data/syntax/gdb-bt.xml
+       data/syntax/gdbinit.xml
+       data/syntax/git-ignore.xml
+       data/syntax/git-rebase.xml
+       data/syntax/glosstex.xml
+       data/syntax/glsl.xml
+       data/syntax/groovy.xml
+       data/syntax/haml.xml
+       data/syntax/hamlet.xml
+       data/syntax/haskell.xml
+       data/syntax/html.xml
+       data/syntax/idris.xml
+       data/syntax/ini.xml
+       data/syntax/isocpp.xml
+       data/syntax/java.xml
+       data/syntax/javadoc.xml
+       data/syntax/jsp.xml
+       data/syntax/latex.xml
+       data/syntax/less.xml
+       data/syntax/lex.xml
+       data/syntax/lilypond.xml
+       data/syntax/literate-curry.xml
+       data/syntax/literate-haskell.xml
+       data/syntax/m3u.xml
+       data/syntax/mako.xml
+       data/syntax/mathematica.xml
+       data/syntax/meson.xml
+       data/syntax/metafont.xml
+       data/syntax/modula-3.xml
+       data/syntax/mup.xml
+       data/syntax/ocaml.xml
+       data/syntax/ocamllex.xml
+       data/syntax/ocamlyacc.xml
+       data/syntax/pango.xml
+       data/syntax/perl.xml
+       data/syntax/picsrc.xml
+       data/syntax/povray.xml
+       data/syntax/praat.xml
+       data/syntax/protobuf.xml
+       data/syntax/pug.xml
+       data/syntax/purebasic.xml
+       data/syntax/rapidq.xml
+       data/syntax/relaxng.xml
+       data/syntax/relaxngcompact.xml
+       data/syntax/rib.xml
+       data/syntax/scala.xml
+       data/syntax/scss.xml
+       data/syntax/sisu.xml
+       data/syntax/spice.xml
+       data/syntax/sql.xml
+       data/syntax/sql-mysql.xml
+       data/syntax/sql-oracle.xml
+       data/syntax/sql-postgresql.xml
+       data/syntax/stata.xml
+       data/syntax/tcsh.xml
+       data/syntax/texinfo.xml
+       data/syntax/textile.xml
+       data/syntax/valgrind-suppression.xml
+       data/syntax/xml.xml
+       data/syntax/xorg.xml
+       data/syntax/xslt.xml
+       data/syntax/xul.xml
+       data/syntax/yacc.xml
+Copyright: Aaron Miller <armantic101@gmail.com>
+           Alain GIBAUD <alain.gibaud@univ-valenciennes.fr>
+           2012, Alex Turbov <i.zaufi@gmail.com>
+           Alex Turbov <i.zaufi@gmail.com>
+           2012, Alexander Kabakov <kabakov.as@gmail.com>
+           Alexander Clay <Tuireann@EpicBasic.org>;Sven Langenkamp <ace@kylixforum.de>
+           Alexander Shabalin
+           Alfredo Luiz Foltran Fialho <alfoltran@ig.com.br>
+           2001-2004, Anders Lund <anders@alweb.dk>
+           Anders Lund <anders@alweb.dk>
+           2005, Andrea Primiani <primiani@dag.it>
+           Andrej Falout <andrej@falout.org>
+           Andrey Karepin <egdfree@opensuse.org>
+           Andriy Lesyuk <s-andy@in.if.ua>
+           Antonio Salazar <savedfastcool@gmail.com>
+           Arnd Diestelhorst <adiestelhorst@m-xchg.de>
+           2007, Aziz Köksal <aziz.koeksal@gmail.com>
+           Bas Bossink <bas.bossink@gmail.com>
+           Bastian Holst <bastianholst@gmx.de>
+           2007, Bill Ross <bill@emailme.net.au>
+           Björn Peemöller <bjp@informatik.uni-kiel.de>
+           Chris Reeves <chris@ev-soft.net>
+           2004, Christoph Hormann <chris_hormann@gmx.de>
+           Cies Breijs (cies_at_kde_nl)
+           Daniel Franke <franke.daniel@gmail.com>
+           David Williams <david@david-williams.info>
+           Florian Schanda <florian.schanda@schanda.de>
+           Giovanni Bacci <giovanni@castellodilari.it>
+           Glyn Webster <glynwebster@orcon.net.nz> and Vincent Hugot <vincent.hugot@gmail.com>
+           Guo Yunhe <guoyunhebrave@gmail.com>
+           Holger Danielsson <holger.danielsson@versanet.de>
+           Ivo Anjo <knuckles@gmail.com>
+           2005, Iztok Kobal <iztok.kobal@siol.net>
+           Jan Janssen <medhefgo@googlemail.com>
+           Jan Janssen <medhefgo@web.de>
+           2004, Jan Villat <jan.villat@net2000.ch>
+           Jan Villat <jan.villat@net2000.ch>
+           2007, Jari-Matti Mäkelä <jmjm@iki.fi>
+           Jeroen Wijnhout <Jeroen.Wijnhout@kdemail.net>
+           Jonathan Schmidt-Domniné <devel@the-user.org>
+           2016, José Joaquín Atria <jjatria@gmail.com>
+           Joseph Wenninger <jowenn@kde.org>
+           kate project
+           Kiwamu Okabe <kiwamu@debian.or.jp>
+           Larry Radbill (Larry.Radbill gmail com)
+           Marc Dassonneville
+           Marc Dassonneville <marc.dassonneville@gmail.com>
+           Matthew Marshall <matthew@matthewmarshall.org>
+           2006-2010, Matthew Woehlke <mw_triad@users.sourceforge.net>
+           Matthias C. M. Troffaes
+           Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
+           Michel Ludwig <michel.ludwig@kdemail.net>
+           Milian Wolff <mail@milianw.de>
+           Miro Kropacek <miro.kropacek@gmail.com>
+           Nicolas Wu <zenzike@gmail.com>
+           Oliver Richers <o.richers@tu-bs.de>
+           Orgad Shaneh <orgads@gmail.com>
+           2004, Peter Lammich (views@gmx.de)
+           Ralph Amissah <ralph.amissah@gmail.com>
+           Raphaël GRAPINET
+           Rob Martin <rob@gamepimp.com>
+           Shane Wright <me@shanewright.co.uk>
+           2004, Simon J Mackenzie <project.katedxml@smackoz.fastmail.fm>
+           Slawomir Mikula <slawek.mikula@gmail.com>
+           Stefan Huebner <st0ff@npl.de>
+           Stephane Micheloud <stephane.micheloud@epfl.ch>
+           Steven Robson <s.a.robson@sms.ed.ac.uk> and Anders Lund
+           Sven Brauch <svenbrauch@gmail.com>
+           Rintze Zelle
+           Thomas Braun <braun@physik.fu-berlin.de>
+           Thomas Braun <thomas.braun@virtuell-zuhause.de>
+           2007, Thomas Schraitle (tom_schr AT web DOT de)
+           Tiberiu Dragulinescu
+           Yedvilun <yedvilun@gmail.com>
+           Yury Lebedev <yurylebedev@mail.ru>
+           Whitehawk Stormchaser <zerokode@gmx.net>
+           Wilbert Berendsen <wilbert@kde.nl>
+License: LGPL-2.0-only
+Comment: Manually collected
+
+Files: data/syntax/yaml.xml
+Copyright: Dr Orlovsky MA <maxim@orlovsky.info>
+           Nibaldo González S. <nibgonz@gmail.com>
+License: LGPL-2.0-only_with_parts_under_MIT
+ Original work under the LGPL.
+ .
+ Modifications under the MIT license.
+
+Files: data/generators/cmake.xml.tpl
+       data/generators/qmake-gen.py
+       data/syntax/cmake.xml
+Copyright: 2013-2020, Alex Turbov <i.zaufi@gmail.com>
+           2004, Alexander Neundorf <neundorf@kde.org>
+           2005, Dominik Haumann <dhdev@gmx.de>
+           2016, Kevin Funk <kfunk@kde.org>
+           2007-2014, Matthew Woehlke <mw_triad@users.sourceforge.net>
+License: LGPL-2.0-or-later
+Comment: Automatically extracted
+
+Files: data/syntax/clojure.xml
+       data/syntax/euphoria.xml
+       data/syntax/elixir.xml
+       data/syntax/ftl.xml
+       data/syntax/gcode.xml
+       data/syntax/k.xml
+       data/syntax/kotlin.xml
+       data/syntax/mergetagtext.xml
+       data/syntax/modelica.xml
+       data/syntax/nsis.xml
+       data/syntax/ply.xml
+       data/syntax/prolog.xml
+       data/syntax/puppet.xml
+       data/syntax/pure.xml
+       data/syntax/q.xml
+       data/syntax/rhtml.xml
+       data/syntax/stl.xml
+       data/syntax/systemc.xml
+       data/syntax/toml.xml
+       data/syntax/vala.xml
+       data/syntax/vrml.xml
+       data/syntax/wavefront-obj.xml
+       data/syntax/xonotic-console.xml
+Copyright: Albert Graef
+           2012, Antoni Boucher <bouanto@hotmail.com>
+           2016, Boris Egorov <egorov@linux.com>
+           2011, Caspar Hasenclever
+           2005, Chris Martin <linux@chriscodes.com>
+           Christian Parg <cparg@gmx.de>
+           2008, Diggory Hardy <diggory.hardy@gmail.com>
+           2004, Dominik Haumann
+           2016, Fernand Veilleux <fernveilleux@gmail.com>
+           flying-sheep@web.de
+           2008, Federico Zenith, Max Planck Institute for Complex Technical Systems, Magdeburg (Germany)
+           2004, Irv Mullins <irvm@ellijay.com>
+           James Schmitz <james.schmitz@gmail.com>
+           2008, Joseph Wenninger <jowenn@kde.org>
+           Kevin Funk <kfunk@kde.org>
+           Matthias Mailänder <matthias.mailaender@vogella.com>
+           2014, Michal Humpula <michal.humpula@seznam.cz>
+           2011, Miquel Sabaté <mikisabate@gmail.com>
+           Radomir Svancer <svancer@gmail.com>
+           2006, Richard Dale <rdale@foton.es>
+           Robert Kratky <kratky@rob.cz>>
+           2008, Robin Pedersen <robinpeder@gmail.com>
+           2014, Rubén Caro <ruben.caro.estevez@gmail.com>
+           2004, Sebastian Vuorinen (sebastian dot vuorinen at helsinki dot fi)
+           2004, Stefan Lang <langstefan@gmx.at>
+           Sergey Mashkov <sergey.mashkov@jetbrains.com>
+           2012, Torsten Eichstädt <torsten.eichstaedt@web.de>
+           Volker Krause <vkrause@kde.org>
+           2006, Wilbert Berendsen <wilbert@kde.nl>
+License: LGPL-2.0-or-later
+Comment: Manually collected
+
+Files: data/syntax/hunspell-aff.xml
+       data/syntax/hunspell-dat.xml
+       data/syntax/hunspell-dic.xml
+       data/syntax/hunspell-idx.xml
+       data/syntax/rtf.xml
+Copyright: Lukas Sommer
+License: LGPL-2.1-only_OR_LGPL-3.0-only_OR_LicenseRef-KDE-Accepted-LGPL
+Comment: Manually collected
+
+Files: poqm/ca/*
+       poqm/ca@valencia/*
+       poqm/uk/*
+Copyright: 2016-2022, This_file_is_part_of_KDE
+License: LGPL-2.1-only_OR_LGPL-3.0-only_OR_LicenseRef-KDE-Accepted-LGPL
+Comment: Manually collected
 
 Files: autotests/folding/light52_muldiv.vhdl.fold
        autotests/folding/or1200_du.v.fold
        autotests/input/light52_muldiv.vhdl
        autotests/input/or1200_du.v
-       data/syntax/ansforth94.xml
-       data/syntax/maxima.xml
-       data/syntax/yang.xml
-Copyright: 2008, Alexey V. Beshenov <al@beshenov.ru>
-           2000-2010, Authors and OPENCORES.ORG
-           1991-1999, Free Software Foundation, Inc
+Copyright: 2000, Authors and OPENCORES.ORG
            2012, Jose A. Ruiz
+License: LGPL-2.1-or-later
+Comment: Manually collected
+
+Files: data/syntax/ansforth94.xml
+       data/syntax/yang.xml
+       data/syntax/maxima.xml
+Copyright: 2008, Alexey V. Beshenov <al@beshenov.ru>
            2011, Mark Corbin <mark@dibsco.co.uk>
-License: LGPL-2.1+
-
-Files: data/syntax/asm-avr.xml
-       data/syntax/gnuassembler.xml
-       data/syntax/go.xml
-       data/syntax/ilerpg.xml
-       data/syntax/mel.xml
-       data/syntax/nasm.xml
-       data/syntax/replicode.xml
-Copyright: 2002, John Zaitseff
-           2014, Martin Sandsmark
-           2010, Miquel Sabaté <mikisabate@gmail.com>
-           2003, Nick Roux
-           2004, Roland Nagy
-License: GPL-2+
-
-Files: autotests/folding/highlight.gdb.fold
-       autotests/html/highlight.gdb.html
-       autotests/input/highlight.gdb
-       autotests/reference/highlight.gdb.ref
-       data/syntax/systemverilog.xml
-       data/syntax/vera.xml
-Copyright: Sean O'Boyle <seanoboyle@intelligentdv.com>
-License: GPL-3+
-
-Files: data/syntax/varnish.xml
-       data/syntax/varnishcc.xml
-       data/syntax/varnishtest.xml
-Copyright: Xavier Guerrin <xavier@tuxfamily.org>
-License: WTFPL
-
-Files: autotests/folding/test.bb.fold
-       autotests/input/test.bb
-       data/syntax/nesc.xml
-       data/syntax/r.xml
-       data/syntax/taskjuggler.xml
-Copyright: 2009, Chris Schlaeger <chris@linux.com>
-           2006, Thomas Friedrichsmeier, Arne Henningsen, and the RKWard Team
-License: GPL-2
-
-Files: data/syntax/erlang.xml
-       data/syntax/modelica.xml
-       data/syntax/perl.xml
-       data/syntax/praat.xml
-Copyright: 2001-2004, Anders Lund <anders@alweb.dk>
-           2007, Bill Ross <bill@emailme.net.au>
-           2016, José Joaquín Atria <jjatria@gmail.com>
-License: LGPL-2
-
-Files: autotests/folding/test.smali.fold
-       autotests/html/test.smali.html
-       autotests/input/test.smali
-       autotests/reference/test.smali.ref
-Copyright: 2006, The Android Open Source Project
-           2006, The Android Open Source Project</Comment>
-           2006, The Android Open Source Project</span>
-License: Apache-2
-
-Files: po/ca/*
-       po/ca@valencia/*
-       po/uk/*
-Copyright: 2016-2020, This_file_is_part_of_KDE
-License: LGPL-2.1+3+KDEeV
+           Nicolás Alvarez
+License: LGPL-2.1-or-later
+Comment: Manually collected
 
 Files: data/syntax/kdesrc-buildrc.xml
        data/syntax/lsl.xml
-Copyright: Michael Pyne <mpyne@kde.org>
-           Rafał Rzepeck
-License: LGPL-3
+Copyright: Rafał Rzepeck
+           Michael Pyne <mpyne@kde.org>
+License: LGPL-3.0-only
+Comment: Manually collected
 
-Files: data/syntax/elixir.xml
-Copyright: 2016, Boris Egorov <egorov@linux.com>
-           2014, Rubén Caro <ruben.caro.estevez@gmail.com>
-License: GPL_LGPL-2+
-Comment: The xml attribution and the licensing information in the comments
- don't match, probably a typo in the attribution.
+Files: data/syntax/fstab.xml
+       data/syntax/ppd.xml
+       data/syntax/rpmspec.xml
+       data/syntax/vcard.xml
+Copyright: Diego Iastrubni <elcuco@kde.org>
+           Lukas Sommer
+License: Public_Domain
+ These files are waived under the Public Domain.
 
-Files: data/syntax/kconfig.xml
-Copyright: Martin Walch <walch.martin@web.de>
-License: GPL-3
+Files: data/syntax/nim.xml
+       data/syntax/varnish.xml
+       data/syntax/varnishcc.xml
+       data/syntax/varnishtest.xml
+Copyright: github.com/juancarlospaco
+           Xavier Guerrin <xavier@tuxfamily.org>
+License: WTFPL
 
-Files: data/syntax/m4.xml
-Copyright: 2011, Cybernetica AS ( http://www.cyber.ee/ )
-License: BSD-3-clause
-
-Files: data/syntax/doxyfile.xml
-Copyright: 2016-2017, Ernst Maurer <ernst.maurer@gmail.com>
-License: Expat-like-Highscore
+Files: data/syntax/cubescript.xml
+Copyright: Kevin Meyer
+License: ZLib
 
 Files: debian/*
-Copyright: 2014, Scarlett Clark <scarlett@scarlettgatelyclark.com>
+Copyright: 2022, Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+           2014, Scarlett Clark <scarlett@scarlettgatelyclark.com>
            2016, Maximiliano Curia <maxy@debian.org>
-License: LGPL-2+
+License: LGPL-2.0-or-later
 
-License: Apache-2
- Licensed under the Apache License, Version 2.0 (the "License");
- you may not use this file except in compliance with the License.
- You may obtain a copy of the License at
+License: Apache-2.0
+ Licensed under the Apache License, Version 2.0 (the "License"); you
+ may not use this file except in compliance with the License. You may
+ obtain a copy of the License at
  .
-      http://www.apache.org/licenses/LICENSE-2.0
+ http://www.apache.org/licenses/LICENSE-2.0
  .
  Unless required by applicable law or agreed to in writing, software
  distributed under the License is distributed on an "AS IS" BASIS,
- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- See the License for the specific language governing permissions and
- limitations under the License.
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+ implied. See the License for the specific language governing
+ permissions and limitations under the License.
  .
- The complete text of the GNU General Public License can be found in
- `/usr/share/common-licenses/Apache-2.0'.
+ On Debian systems, the complete text of the Apache License, Version
+ 2.0 can be found in `/usr/share/common-licenses/Apache-2.0’.
 
-License: BSD-3-clause
+License: Artistic
+ On Debian systems, the complete text of the Artistic license can be
+ found in `/usr/share/common-licenses/Artistic’.
+
+License: BSD-2-Clause
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
  are met:
  .
- 1. Redistributions of source code must retain the copyright
+ 1. Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
- 2. Redistributions in binary form must reproduce the copyright
-    notice, this list of conditions and the following disclaimer in the
-    documentation and/or other materials provided with the distribution.
- 3. The name of the author may not be used to endorse or promote products
-    derived from this software without specific prior written permission.
  .
- THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
- IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
- OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
- IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
- INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
- NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
- THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
- THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the
+    distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+ FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+ COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+ BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
+ ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
 
-License: Expat
- Permission is hereby granted, free of charge, to any person obtaining a copy
- of this software and associated documentation files (the "Software"), to
- deal in the Software without restriction, including without limitation the
- rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
- sell copies of the Software, and to permit persons to whom the Software is
- furnished to do so, subject to the following conditions:
+License: BSD-3-Clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
  .
- The above copyright notice and this permission notice shall be included in
- all copies or substantial portions of the Software.
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
  .
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
- FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
- IN THE SOFTWARE.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the
+    distribution.
+ .
+ 3. Neither the name of the copyright holder nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+ FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+ COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+ BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
+ ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+
+License: CC0-1.0
+ To the extent possible under law, the author(s) have dedicated all
+ copyright and related and neighboring rights to this software to the
+ public domain worldwide. This software is distributed without any
+ warranty.
+ .
+ You should have received a copy of the CC0 Public Domain Dedication
+ along with this software. If not, see
+ <https://creativecommons.org/publicdomain/zero/1.0/>.
+ .
+ On Debian systems, the complete text of the CC0 Public Domain
+ Dedication can be found in `/usr/share/common-licenses/CC0-1.0’.
 
 License: Expat-like-Highscore
- Permission to use, copy, modify, and distribute this software
- and its documentation for any purpose and without fee is hereby
- granted, provided that the above copyright notice appear in all
- copies and that both that the copyright notice and this
- permission notice and warranty disclaimer appear in supporting
- documentation, and that the name of the author not be used in
- advertising or publicity pertaining to distribution of the
- software without specific, written prior permission.
+ Permission to use, copy, modify, and distribute this software and
+ its documentation for any purpose and without fee is hereby granted,
+ provided that the above copyright notice appear in all copies and
+ that both that the copyright notice and this permission notice and
+ warranty disclaimer appear in supporting documentation, and that the
+ name of the author not be used in advertising or publicity
+ pertaining to distribution of the software without specific, written
+ prior permission.
  .
- The author disclaim all warranties with regard to this
- software, including all implied warranties of merchantability
- and fitness.  In no event shall the author be liable for any
- special, indirect or consequential damages or any damages
- whatsoever resulting from loss of use, data or profits, whether
- in an action of contract, negligence or other tortious action,
- arising out of or in connection with the use or performance of
- this software.
+ The author disclaim all warranties with regard to this software,
+ including all implied warranties of merchantability and fitness.  In
+ no event shall the author be liable for any special, indirect or
+ consequential damages or any damages whatsoever resulting from loss
+ of use, data or profits, whether in an action of contract,
+ negligence or other tortious action, arising out of or in connection
+ with the use or performance of this software.
+
+License: GFDL
+ On Debian systems, the complete text of the GNU Free Documentation
+ License can be found in `/usr/share/common-licenses/GFDL’.
 
 License: GPL
- The complete text of the GNU General Public License can be found in
- `/usr/share/common-licenses/GPL'.
+ On Debian systems, the complete text of the GNU General Public
+ License can be found in `/usr/share/common-licenses/GPL’.
 
-License: GPL-2
- The complete text of the GNU General Public License version 2 can be found in
- "/usr/share/common-licenses/GPL-2".
+License: GPL-2.0-only
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; version 2.
+ .
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ 02110-1301, USA. Also add information on how to contact you by
+ electronic and paper mail.
+ .
+ On Debian systems, the complete text of the GNU General Public
+ License version 2 can be found in
+ `/usr/share/common-licenses/GPL-2’.
 
-License: GPL-2+
- This package is free software; you can redistribute it and/or modify
+License: GPL-2.0-or-later
+ This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
  the Free Software Foundation; either version 2 of the License, or
  (at your option) any later version.
  .
- This package is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ General Public License for more details.
  .
  You should have received a copy of the GNU General Public License
- along with this program. If not, see <http://www.gnu.org/licenses/>
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ 02110-1301, USA. Also add information on how to contact you by
+ electronic and paper mail.
  .
- On Debian systems, the complete text of the GNU General
- Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+ On Debian systems, the complete text of the GNU General Public
+ License version 2 can be found in
+ `/usr/share/common-licenses/GPL-2’.
 
-License: GPL-3
- The complete text of the GNU General Public License version 3 can be found in
- `/usr/share/common-licenses/GPL-3'.
+License: GPL-3.0-only
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GPL License as published by the Free
+ Software Foundation, version 3.
+ .
+ This package is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU General Public
+ License version 3 can be found in
+ `/usr/share/common-licenses/GPL-3’.
 
-License: GPL-3+
+License: GPL-3.0-or-later
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
  the Free Software Foundation, either version 3 of the License, or
  (at your option) any later version.
  .
- This program is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ General Public License for more details.
  .
- The complete text of the GNU General Public License version 3 can be found in
- `/usr/share/common-licenses/GPL-3'.
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see
+ <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU General Public
+ License version 3 can be found in
+ `/usr/share/common-licenses/GPL-3’.
 
-License: GPL_LGPL-2+
- This library is free software; you can redistribute it and/or
- modify it under the terms of the GNU Library General Public
- License as published by the Free Software Foundation; either
- version 2 of the License, or (at your option) any later version.
- This library is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
+License: LGPL-2.0-only
+ This library is free software; you can redistribute it and/or modify
+ it under the terms of the GNU Library General Public License version
+ 2 as published by the Free Software Foundation.
+ .
+ This library is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
  Library General Public License for more details.
+ .
  You should have received a copy of the GNU Library General Public
- License along with this library; if not, write to the
- Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
- Boston, MA  02110-1301, USA.
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+ 02110-1301, USA.
  .
- The complete text of the GNU Library General Public License version 2 can be
- found in `/usr/share/common-licenses/LGPL-2', likewise, the complete text of
- the GNU General Public License can be found in
- `/usr/share/common-licenses/GPL'.
+ On Debian systems, the complete text of the GNU Library General
+ Public License version 2 can be found in
+ `/usr/share/common-licenses/LGPL-2’.
 
-License: LGPL-2
- This library is free software; you can redistribute it and/or
- modify it under the terms of the GNU Library General Public
- License version 2 as published by the Free Software Foundation.
+License: LGPL-2.0-or-later
+ This library is free software; you can redistribute it and/or modify
+ it under the terms of the GNU Library General Public License as
+ published by the Free Software Foundation; either version 2 of the
+ License, or (at your option)  any later version.
  .
- This library is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
+ This library is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
  Library General Public License for more details.
  .
- You should have received a copy of the GNU Library General Public License
- along with this library; see the file COPYING.LIB.  If not, write to
- the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
- Boston, MA 02110-1301, USA.
+ You should have received a copy of the GNU Library General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+ 02110-1301, USA.
  .
  On Debian systems, the complete text of the GNU Library General
- Public License version 2 can be found in "/usr/share/common-licenses/LGPL-2".
+ Public License version 2 can be found in
+ `/usr/share/common-licenses/LGPL-2’.
 
-License: LGPL-2+
- This library is free software; you can redistribute it and/or
- modify it under the terms of the GNU Library General Public
- License as published by the Free Software Foundation; either
- version 2 of the License, or (at your option) any later version.
+License: LGPL-2.1-only_OR_LGPL-3.0-only_OR_LicenseRef-KDE-Accepted-LGPL
+ This library is free software; you can redistribute it and/or modify
+ it under the terms of the GNU Lesser General Public License as
+ published by the Free Software Foundation; either version 2.1 of the
+ License, or (at your option) version 3, or any later version
+ accepted by the membership of KDE e.V. (or its successor approved by
+ the membership of KDE e.V.), which shall act as a proxy defined in
+ Section 6 of version 3 of the license.
  .
- This library is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- Library General Public License for more details.
- .
- You should have received a copy of the GNU Library General Public License
- along with this library; see the file COPYING.LIB.  If not, write to
- the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
- Boston, MA 02110-1301, USA.
- .
- On Debian systems, the complete text of the GNU Library General
- Public License version 2 can be found in "/usr/share/common-licenses/LGPL-2".
-
-License: LGPL-2.1+
- This library is free software; you can redistribute it and/or
- modify it under the terms of the GNU Lesser General Public
- License as published by the Free Software Foundation; either
- version 2.1 of the License, or (at your option) any later version.
- .
- This library is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
+ This library is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
  Lesser General Public License for more details.
  .
- On Debian systems, the complete text of the GNU Lesser General Public License
- version 2.1 can be found in `/usr/share/common-licenses/LGPL-2.1'.
-
-License: LGPL-2.1+3+KDEeV
- This file is distributed under the license LGPL version 2.1 or
- version 3 or later versions approved by the membership of KDE e.V.
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library.  If not, see
+ <https://www.gnu.org/licenses/>.
  .
- The complete text of the GNU Lesser General Public License version 2.1
- can be found in `/usr/share/common-licenses/LGPL-2.1', likewise,
- the complete text of the GNU Lesser General Public License version 3
- can be found in `/usr/share/common-licenses/LGPL-3'.
+ On Debian systems, the complete text of the GNU Lesser General
+ Public License version 2.1 can be found in
+ `/usr/share/common-licenses/LGPL-2.1’, likewise, the complete text
+ of the GNU Lesser General Public License version 3 can be found in
+ `/usr/share/common-licenses/LGPL-3’.
 
-License: LGPL-3
- The complete text of the GNU Lesser General Public License version 3 can be
- found in `/usr/share/common-licenses/LGPL-3'.
+License: LGPL-2.1-or-later
+ This library is free software; you can redistribute it and/or modify
+ it under the terms of the GNU Lesser General Public License as
+ published by the Free Software Foundation; either version 2.1 of the
+ License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ 02110-1301  USA Also add information on how to contact you by
+ electronic and paper mail.
+ .
+ On Debian systems, the complete text of the GNU Lesser General
+ Public License version 2.1 can be found in
+ `/usr/share/common-licenses/LGPL-2.1’.
+
+License: LGPL-3.0-only
+ This library is free software; you can redistribute it and/or modify
+ it under the terms of the GNU Lesser General Public License version
+ 3 as published by the Free Software Foundation.
+ .
+ This library is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library.  If not, see
+ <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU Lesser General
+ Public License version 3 can be found in
+ `/usr/share/common-licenses/LGPL-3’.
+
+License: MIT
+ Permission is hereby granted, free of charge, to any person
+ obtaining a copy of this software and associated documentation files
+ (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge,
+ publish, distribute, sublicense, and/or sell copies of the Software,
+ and to permit persons to whom the Software is furnished to do so,
+ subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be
+ included in all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+ BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
 
 License: WTFPL
  Everyone is permitted to copy and distribute verbatim or modified
@@ -477,3 +1049,23 @@ License: WTFPL
    TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
  .
  0. You just DO WHAT THE FUCK YOU WANT TO.
+
+License: ZLib
+ This software is provided 'as-is', without any express or implied
+ warranty. In no event will the authors be held liable for any
+ damages arising from the use of this software.
+ .
+ Permission is granted to anyone to use this software for any
+ purpose, including commercial applications, and to alter it and
+ redistribute it freely, subject to the following restrictions:
+ .
+     1. The origin of this software must not be misrepresented; you
+     must not claim that you wrote the original software. If you use
+     this software in a product, an acknowledgment in the product
+     documentation would be appreciated but is not required.
+ .
+     2. Altered source versions must be plainly marked as such, and
+     must not be misrepresented as being the original software.
+ .
+     3. This notice may not be removed or altered from any source
+     distribution.
