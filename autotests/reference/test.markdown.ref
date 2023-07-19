@@ -194,7 +194,7 @@
 <Comment>#!/usr/bin/env bash</Comment><br/>
 <Normal Text></Normal Text><br/>
 <Control Flow>for</Control Flow><Normal Text> f </Normal Text><Keyword>in</Keyword><Normal Text> </Normal Text><Glob>*</Glob><Control>;</Control><Normal Text> </Normal Text><Control Flow>do</Control Flow><br/>
-<Normal Text>    </Normal Text><Builtin>echo</Builtin><Normal Text> </Normal Text><String DoubleQ>"</String DoubleQ><Variable>$f</Variable><String DoubleQ>"</String DoubleQ><br/>
+<Normal Text>    </Normal Text><Builtin>echo</Builtin><Normal Text> </Normal Text><String DoubleQ>"</String DoubleQ><Dollar Prefix>$</Dollar Prefix><Variable>f</Variable><String DoubleQ>"</String DoubleQ><br/>
 <Control Flow>done</Control Flow><br/>
 <Fenced Code>```</Fenced Code><br/>
 <Normal Text></Normal Text><br/>
@@ -218,7 +218,7 @@
 <Fenced Code>```c</Fenced Code><br/>
 <Preprocessor>#include </Preprocessor><Prep. Lib><stdio.h></Prep. Lib><br/>
 <Preprocessor>#include </Preprocessor><Prep. Lib>"stdint.h"</Prep. Lib><br/>
-<Preprocessor>#define SOME_VAR 1</Preprocessor><br/>
+<Preprocessor>#define SOME_VAR </Preprocessor><Decimal>1</Decimal><br/>
 <Normal Text></Normal Text><br/>
 <Data Type>static</Data Type><Normal Text> </Normal Text><Data Type>uint64_t</Data Type><Normal Text> intWithSuffix </Normal Text><Symbol>=</Symbol><Normal Text> </Normal Text><Decimal>42</Decimal><Standard Suffix>ull</Standard Suffix><Normal Text> </Normal Text><Symbol>+</Symbol><Normal Text> </Normal Text><Symbol>~</Symbol><Decimal>1233</Decimal><Standard Suffix>L</Standard Suffix><Symbol>;</Symbol><br/>
 <Data Type>static</Data Type><Normal Text> </Normal Text><Data Type>int</Data Type><Normal Text> octNum </Normal Text><Symbol>=</Symbol><Normal Text> </Normal Text><Octal>07232</Octal><Symbol>;</Symbol><br/>
@@ -469,6 +469,13 @@
 <Keyword>Select</Keyword><Normal Text> col1, col2 </Normal Text><Keyword>From</Keyword><Normal Text> stuff </Normal Text><Keyword>Where</Keyword><Normal Text> stuff</Normal Text><String Char>.</String Char><Normal Text>col1 </Normal Text><Operator Keyword>IS</Operator Keyword><Normal Text> </Normal Text><Operator Keyword>NOT</Operator Keyword><Normal Text> </Normal Text><Keyword>NuLL</Keyword><Normal Text>;</Normal Text><br/>
 <Fenced Code>```</Fenced Code><br/>
 <Normal Text></Normal Text><br/>
+<Header H2>## Nim</Header H2><br/>
+<Normal Text></Normal Text><br/>
+<Fenced Code>```nim</Fenced Code><br/>
+<Keywords>proc</Keywords><Normal Text> </Normal Text><ProcDefs>main</ProcDefs><Brackets>()</Brackets><Normal Text> </Normal Text><Symbols>=</Symbols><br/>
+<Normal Text>    </Normal Text><Controls>echo</Controls><Normal Text> </Normal Text><String>"Hello world!"</String><br/>
+<Fenced Code>```</Fenced Code><br/>
+<Normal Text></Normal Text><br/>
 <Header H2>## TypeScript</Header H2><br/>
 <Normal Text></Normal Text><br/>
 <Fenced Code>```ts</Fenced Code><br/>
@@ -545,7 +552,7 @@
 <Normal Text></Normal Text><br/>
 <Fenced Code>~~~bash</Fenced Code><br/>
 <Control Flow>for</Control Flow><Normal Text> f </Normal Text><Keyword>in</Keyword><Normal Text> </Normal Text><Glob>*</Glob><Control>;</Control><Normal Text> </Normal Text><Control Flow>do</Control Flow><br/>
-<Normal Text>    </Normal Text><Builtin>echo</Builtin><Normal Text> </Normal Text><String DoubleQ>"</String DoubleQ><Variable>$f</Variable><String DoubleQ>"</String DoubleQ><br/>
+<Normal Text>    </Normal Text><Builtin>echo</Builtin><Normal Text> </Normal Text><String DoubleQ>"</String DoubleQ><Dollar Prefix>$</Dollar Prefix><Variable>f</Variable><String DoubleQ>"</String DoubleQ><br/>
 <Control Flow>done</Control Flow><br/>
 <Fenced Code>~~~</Fenced Code><br/>
 <Normal Text></Normal Text><br/>

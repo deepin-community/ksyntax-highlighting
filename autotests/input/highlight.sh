@@ -29,6 +29,29 @@ mkdir this\ isnt\ #a\ comment
 mkdir this\ isnt\\\;#a\ comment
 mkdir this\\ #is a comment
 
+<<'#BLOCK-COMMENT'
+NOTE This is the "miltiline" comment.
+
+[===[.rst:
+
+Docs
+----
+
+Documentation block in ``RST`` format **starts** *here*.
+
+]===]
+#BLOCK-COMMENT
+
+: << '#SC2188'
+[====[.rst:
+The *multiline* comment does not trigger the SC2188_ warning of `shellcheck`.
+
+.. _SC2188: https://www.shellcheck.net/wiki/SC2188
+]====]
+
+... continue with _normal_ Bash comment.
+#SC2188
+
 # brace expansion
 mv my_file.{JPG,jpg}
 echo f.{01..100..3} f.{Z..a..-3}
@@ -248,6 +271,12 @@ pacman -syu --needed intel-ucode grub
 # Braces (bug ##387915)
 [[ $line_name =~ \{([0-9]{1,})\}\{([0-9]{1,})\}(.*) ]]
 [[ $name =~ (.*)_(S[0-9]{2})(E[0-9]{2,3}[a-z]{0,1})_(.*) ]]
+# Comments in Braces (bug 450878)
+[[ # comment 1
+   1 == 1 # comment 2
+   # comment 3
+]]
+
 rm /data/{hello1,hello2}/input/{bye1,$bye2}/si{a,${b},c{k,p{e,a}}}/*.non
 rm /data/{aa,{e,i}t{b,c} # Not closed
 rm /data/{aa,{e,i}t{b,c}}
@@ -314,6 +343,12 @@ subs f! f!! f!s 'a'!s \( $v {a,b} {a} {a}/d {a\,} {a,} {a,\},b} ds/{a,b}sa/s
 !a -f
 'a' -f
 $a -f
+! cmd
+
+# coproc command (#460301)
+coproc ls thisfiledoesntexist 2>&1
+coproc { ls thisfiledoesntexist; read; } 2>&1
+coproc mycoproc { awk '{print "foo" $0;fflush()}'; } >&3
 
 # redirections (prefix)
 <<<s cat
@@ -368,6 +403,8 @@ echo a!bc a{a}b a{b,c}d a{b,{d,e}}d a\ b
 echo a$bc a$b/c a${b}c a$((b-3))c a$(b)c a$(a b c)c
 echo ${a[*]} ${a[@]} ${a[${b}]} ${a:-x$z} ${a-x} ${a/g} ${a//f/f} ${a//f*/f*}
 echo ${a^^l*} ${a,} ${!a} ${#a[1]} ${a:1:$b} $((++i,i--))
+echo "${var#lo+(r)em}" x "${var#+(r)em}" x
+echo "${var#refs/heads}" x "${var#refs}" x
 
 [ a ]
 [ -f f'f'f ]
@@ -388,11 +425,19 @@ echo ${a^^l*} ${a,} ${!a} ${#a[1]} ${a:1:$b} $((++i,i--))
 [[ 1+2 -eq 1+2 ]]
 [ a = b c ]
 [[ a = b c ]]
+[ -z 1 -a 1 -eq 1 ]
+[ 2 -eq 1 -o 1 -eq 1 ]
 [[ x =~ a(b c|$)' '{1,}[a[.digit.]] ]]
 [[ x =~ [ ] ]]
 [[ x =~ ([ ]) ]]
 [[ x =~ [ ]]
 [[ x =~ ([) ]]
+[[ (a =~ a) ]]
+[[ a =~ a || a -eq 2 ]]
+[[ (a =~ a) || a -eq 2 ]]
+[[ (0 -le $b) ]]
+[[ ( 0 -le $b ) ]]
+[[ ( 0 -le $b || $b -le 100 ) ]]
 [[ a<b ]]
 [[ a <b ]]
 [[ a< b ]]
@@ -402,9 +447,37 @@ echo ${a^^l*} ${a,} ${!a} ${#a[1]} ${a:1:$b} $((++i,i--))
 [[ !(-d .) ]]
 [[ -f a || -f b ]]
 [[ -f a||-f b ]]
+[[ ! (a -eq b) ]]
 [ -d `echo .`] ]
 [[ -d `echo .`]] ]]
 [[ a != b && ${a}a = b${b} ]]
+[[
+  1 -eq 2
+]]
+[[ -&&- ]]
+[[ ]]
+[[ -f ]]
+[[ -f [0-9a] ]]
+[[ ?*[0-9] = [^0-9] ]]
+[[ -f = ?*[0-9] ]]
+[[ ?*[0-9] = ?*[0-9] ]]
+[[ a/sa[s = dsad?*[0-9]dsa$ds ]]
+[[ a/sa[s = dsad?*[0-9]ds/a$ds ]]
+[[ a =~ [12]a([!d]a?s[x[:alnum:]]|d?)p ]]
+
+[[ #comm1
+ #comm2
+ p[1] == p[2]
+ #comm3
+ #comm4
+]]
+
+[[ #comm1
+ #comm2
+ -f p[2]
+ #comm3
+ #comm4
+]]
 
 ((3+1+a+$c*(x) & 0x43422fd+03-085/23#D9a@_^8))
 ((1/(2-(a-4))))

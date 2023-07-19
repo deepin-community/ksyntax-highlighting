@@ -32,6 +32,8 @@ def func<beginfold id='2'>(</beginfold id='2'>x<endfold id='2'>)</endfold id='2'
         print<beginfold id='2'>(</beginfold id='2'>"single \
                 continued line "<endfold id='2'>)</endfold id='2'>
         print<beginfold id='2'>(</beginfold id='2'>'single line'<endfold id='2'>)</endfold id='2'>
+    if y := x:
+        anext<beginfold id='2'>(</beginfold id='2'>a<endfold id='2'>)</endfold id='2'>
     return float<beginfold id='2'>(</beginfold id='2'>len<beginfold id='2'>(</beginfold id='2'>a2<endfold id='2'>)</endfold id='2'><endfold id='2'>)</endfold id='2'>
 
 
@@ -127,11 +129,14 @@ def func1<beginfold id='2'>(</beginfold id='2'><endfold id='2'>)</endfold id='2'
 async def func2<beginfold id='2'>(</beginfold id='2'><endfold id='2'>)</endfold id='2'>:
     await asyncio.sleep<beginfold id='2'>(</beginfold id='2'>1<endfold id='2'>)</endfold id='2'>
 
+assert cond, \
+    "bla bla"
+
 "\\\\\\\\\\ENSURE THAT THIS AND THE FOLLOWING LINES ARE AT THE <endfold id='6'>END</endfold id='6'> OF THE FILE\\\\\\\\\\ \
 "
-</indentfold>a = 'otherwise all succeeding lines will be
-stuck on the Error attribute'
+</indentfold>a = 'otherwise the next line will be
+<indentfold>stuck on the Error attribute'
 br"Strings delimited by single quotes (' or ")
 can NOT be defined across multiple lines
 unless escaped with \
-"
+</indentfold>"

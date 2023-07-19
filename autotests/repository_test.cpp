@@ -7,12 +7,12 @@
 #include "repository_test_base.h"
 #include "test-config.h"
 
-#include <abstracthighlighter.h>
-#include <definition.h>
-#include <format.h>
-#include <repository.h>
-#include <state.h>
-#include <theme.h>
+#include <KSyntaxHighlighting/AbstractHighlighter>
+#include <KSyntaxHighlighting/Definition>
+#include <KSyntaxHighlighting/Format>
+#include <KSyntaxHighlighting/Repository>
+#include <KSyntaxHighlighting/State>
+#include <KSyntaxHighlighting/Theme>
 
 #include <QFileInfo>
 #include <QPalette>
@@ -147,7 +147,7 @@ private Q_SLOTS:
 
         // comment markers
         QCOMPARE(def.singleLineCommentMarker(), QLatin1String("//"));
-        QCOMPARE(def.singleLineCommentPosition(), KSyntaxHighlighting::CommentPosition::StartOfLine);
+        QCOMPARE(def.singleLineCommentPosition(), KSyntaxHighlighting::CommentPosition::AfterWhitespace);
         const auto cppMultiLineCommentMarker = QPair<QString, QString>(QLatin1String("/*"), QLatin1String("*/"));
         QCOMPARE(def.multiLineCommentMarker(), cppMultiLineCommentMarker);
 

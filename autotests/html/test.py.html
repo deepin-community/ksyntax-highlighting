@@ -38,6 +38,8 @@ c <span style="color:#ca60ca;">=</span> <span style="color:#b08000;">0x420_F52</
         <span style="color:#644a9b;font-weight:bold;">print</span>(<span style="color:#bf0303;">&quot;single </span><span style="color:#924c9d;">\</span>
 <span style="color:#bf0303;">                continued line &quot;</span>)
         <span style="color:#644a9b;font-weight:bold;">print</span>(<span style="color:#bf0303;">'single line'</span>)
+    <span style="font-weight:bold;">if</span> y <span style="color:#ca60ca;">:=</span> x:
+        <span style="color:#644a9b;font-weight:bold;">anext</span>(a)
     <span style="font-weight:bold;">return</span> <span style="color:#644a9b;font-weight:bold;">float</span>(<span style="color:#644a9b;font-weight:bold;">len</span>(a2))
 
 
@@ -133,12 +135,15 @@ match(command.split())
 <span style="font-weight:bold;">async</span> <span style="font-weight:bold;">def</span> func2():
     <span style="font-weight:bold;">await</span> asyncio.sleep(<span style="color:#b08000;">1</span>)
 
+<span style="font-weight:bold;">assert</span> cond, <span style="color:#ca60ca;">\</span>
+    <span style="color:#bf0303;">&quot;bla bla&quot;</span>
+
 <span style="color:#898887;">&quot;</span><span style="color:#924c9d;">\\\\\\\\\\</span><span style="color:#898887;">ENSURE THAT THIS AND THE FOLLOWING LINES ARE AT THE </span><span style="color:#0057ae;background-color:#e0e9f8;">END</span><span style="color:#898887;"> OF THE FILE</span><span style="color:#924c9d;">\\\\\\\\\\</span><span style="color:#898887;"> </span><span style="color:#924c9d;">\</span>
 <span style="color:#898887;">&quot;</span>
-a <span style="color:#ca60ca;">=</span> <span style="color:#bf0303;">'otherwise all succeeding lines will be</span>
+a <span style="color:#ca60ca;">=</span> <span style="color:#bf0303;">'otherwise the next line will be</span>
 <span style="color:#bf0303;text-decoration:underline;">stuck on the Error attribute'</span>
-<span style="color:#bf0303;text-decoration:underline;">br&quot;Strings delimited by single quotes (' or &quot;)</span>
-<span style="color:#bf0303;text-decoration:underline;">can NOT be defined across multiple lines</span>
-<span style="color:#bf0303;text-decoration:underline;">unless escaped with \</span>
-<span style="color:#bf0303;text-decoration:underline;">&quot;</span>
+<span style="color:#e31616;">br&quot;Strings delimited by single quotes (' or &quot;</span>)
+can NOT be defined across multiple lines
+unless escaped <span style="font-weight:bold;">with</span> <span style="color:#ca60ca;">\</span>
+<span style="color:#bf0303;">&quot;</span>
 </pre></body></html>
