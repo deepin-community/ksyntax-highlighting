@@ -1,3 +1,9 @@
+ksyntax-highlighting (5.103.0-3deepin0) unstable; urgency=medium
+
+  * No source change upload against GCC 12.
+
+ -- Tianyu Chen <sweetyfish@deepin.org>  Thu, 19 Sep 2024 22:52:23 +0800
+
 ksyntax-highlighting (5.103.0-3) unstable; urgency=medium
 
   * Team upload.
